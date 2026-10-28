@@ -19,3 +19,6 @@ openai-math/
 lean-dist/
 verifiers/
 **/scratch/
+
+.native-leaf-audit-logs/
+.codex-internal/

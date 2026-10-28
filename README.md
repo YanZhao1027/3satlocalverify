@@ -60,3 +60,9 @@ Read [the full Lean-backed cost and width report](docs/COMPLEXITY_20261028.md).
 To run the checks on a workstation with OpenAI/math/Mathlib already provisioned:
 
 `execution-prototype/complexity-20261028/check_complexity.sh`
+
+## New: GPT-6.1-Sol-assisted, coordinator-audited native-leaf bridge (2026-10-28)
+
+[Source-level report](docs/NATIVE_LEAF_BRIDGE_20261028.md) · [Research/acceptance protocol](docs/SOL_RESEARCH_PROTOCOL_20261028.md) · [Verified Lean modules](execution-prototype/native-leaf-audit-20261028/)
+
+We linked the original OpenAI **fixed native leaf command** and its `LeafContract` to the paper's original runtime envelope; proved a uniform polynomial cap can actually satisfy the leaf's three local budget minima; and independently checked the upstream final theorem's standard axioms. Three new Lean proofs and two original theorem audits pass using Lean 4.34.1, without `sorry` or additional axioms. **This does not extract or benchmark the complete original machine and does not independently establish a subexponential SAT algorithm.** The agent could not use the machine's shell sandbox; the coordinator compiled and verified Sol's proposed code manually.

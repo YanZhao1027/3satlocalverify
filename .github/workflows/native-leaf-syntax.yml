@@ -1,0 +1,25 @@
+name: Native-leaf research source checks
+on:
+  push:
+    paths:
+      - 'execution-prototype/native-leaf-audit-20261028/**'
+      - 'docs/NATIVE_LEAF_BRIDGE_20261028.md'
+      - '.github/workflows/native-leaf-syntax.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/native-leaf-audit-20261028/**'
+      - '.github/workflows/native-leaf-syntax.yml'
+  workflow_dispatch:
+jobs:
+  source-hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate shell runner syntax and forbidden Lean placeholders
+        run: |
+          bash -n execution-prototype/native-leaf-audit-20261028/check_native_leaf_cost.sh
+          if grep -En '\b(sorry|admit|native_decide)\b' execution-prototype/native-leaf-audit-20261028/NativeLeaf*.lean; then
+            echo 'Lean source contains unverified placeholder' >&2
+            exit 1
+          fi
+          echo 'Source syntax hygiene PASS; full Lean kernel checks require preinstalled pinned OpenAI math dependencies.'
