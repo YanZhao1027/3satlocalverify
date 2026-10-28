@@ -1,0 +1,24 @@
+name: Original native hash arithmetic cost archive checks
+on:
+  push:
+    paths:
+      - 'execution-prototype/native-core-cost-20261028/**'
+      - '.github/workflows/native-core-cost.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/native-core-cost-20261028/**'
+      - '.github/workflows/native-core-cost.yml'
+  workflow_dispatch:
+jobs:
+  measured-data-offline-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate reported original-source arithmetic and ABI evidence
+        run: |
+          python3 execution-prototype/native-core-cost-20261028/validate_native_core_results.py
+          python3 -m py_compile execution-prototype/native-core-cost-20261028/*.py
+          bash -n execution-prototype/native-core-cost-20261028/check_native_core_cost.sh

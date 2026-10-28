@@ -74,3 +74,7 @@ We linked the original OpenAI **fixed native leaf command** and its `LeafContrac
 ## Authentic nonterminal input: classification and leaf loading (2026-10-28)
 
 [Read the verified prefix experiment and its explicit limits](docs/NONTERMINAL_PREFIX_20261028.md). Four genuinely nonterminal CNFs now execute original classification and leaf loading. The first 100 complete machine states match the upstream source interpreter. **The original high-query counting algorithm has not been executed; oracle #SAT counts are reference values, not measured outputs.**
+
+## Real original hash-parameter execution and cost measurements (2026-10-28)
+
+[Measured source-bit costs and exact verification boundaries](docs/NATIVE_CORE_COST_20261028.md). Six input parameter sets actually execute 2,324–3,778 original arithmetic bit instructions, with 426/426 original opcodes and full 3,006-step source trace agreement for the principal case. The real original 16-register/44-stack ABI completes 3,585 instructions with 108 peak occupied stack data bits, 637/637 matching original opcodes and a full original-machine state replay. Full 40×896 preparation and the high-query #SAT solver have **not** yet executed; no end-to-end SAT speed advantage is established.

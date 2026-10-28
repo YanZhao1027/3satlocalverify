@@ -26,3 +26,6 @@ verifiers/
 
 # Local nonterminal Lean audit logs, cached instruction build artifacts
 .native-nonterminal-audit-logs/
+
+# Local original hash/ABI performance experiment logs
+.native-core-cost-logs/
