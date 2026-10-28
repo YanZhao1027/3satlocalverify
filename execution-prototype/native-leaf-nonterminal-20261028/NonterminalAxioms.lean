@@ -1,0 +1,12 @@
+import NonterminalSourceProof
+import LinearizedCompiler
+
+#print axioms IndependentNonterminal.nonterminal_formula
+#print axioms IndependentNonterminal.actual_leaf_ready
+#print axioms IndependentNonterminal.original_nonterminal_flags
+#print axioms IndependentNonterminal.original_nonterminal_prefix_executes
+#print axioms IndependentNonterminal.original_nonterminal_compiled_prefix_trace
+#print axioms IndependentNonterminal.one_positive_unit_has_four_models
+#print axioms IndependentNonterminal.Linearize.baseCode_length
+#print axioms IndependentNonterminal.Linearize.callCode_length
+#print axioms IndependentNonterminal.Linearize.instructionArray_size

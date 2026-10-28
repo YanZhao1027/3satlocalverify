@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-28",
+  "source": "NonterminalBatch.lean run against pinned OpenAI/math + Lean 4.34.1",
+  "experiment": "Actual original NativeTerminal.readyCommand and Native.loadLeaf, compiled through new linear source layout with high-query suffix explicitly NOT executed",
+  "original_program": "commonPrefix = .seq NativeTerminal.readyCommand (.ite 0 skip (.ite 7 (Native.loadLeaf ; skip) skip))",
+  "executed_high_query": false,
+  "full_original_NativeLeafProgram_command_executed": false,
+  "independently_proven_original_prefix_trace_for_positive_unit": true,
+  "original_vs_compact_entire_state_matched_first_100_steps": true,
+  "original_vs_flat_first_60_labels_matched": true,
+  "full_2856_label_diff": "TIMEOUT at 420 sec; not proven; cannot claim equivalence of arbitrary instructions",
+  "source_instruction_measure": "Real BitProgram.Instr variants on independently linearized prefix; includes final halt",
+  "space_measure": "Maximum occupied data bits among all 1220 stacks, separately maximum single stack width; no primitive-machine tape allocation",
+  "oracle_measure": "Separate Lean SAT.count on same small input, NOT a result of the executed prefix",
+  "cases": [
+    {
+      "case": "unit_positive",
+      "clauses": 1,
+      "oracleCount": 4,
+      "halted": true,
+      "guard0": false,
+      "guard7": true,
+      "copied": true,
+      "sourceSteps": 3166,
+      "peakTotalBits": 52,
+      "peakSingleStackBits": 17,
+      "codeLookups": 2836
+    },
+    {
+      "case": "two_units",
+      "clauses": 2,
+      "oracleCount": 2,
+      "halted": true,
+      "guard0": false,
+      "guard7": true,
+      "copied": true,
+      "sourceSteps": 3552,
+      "peakTotalBits": 92,
+      "peakSingleStackBits": 37,
+      "codeLookups": 2836
+    },
+    {
+      "case": "contradiction",
+      "clauses": 2,
+      "oracleCount": 0,
+      "halted": true,
+      "guard0": false,
+      "guard7": true,
+      "copied": true,
+      "sourceSteps": 3408,
+      "peakTotalBits": 76,
+      "peakSingleStackBits": 29,
+      "codeLookups": 2836
+    },
+    {
+      "case": "two_binary_clauses",
+      "clauses": 2,
+      "oracleCount": 4,
+      "halted": true,
+      "guard0": false,
+      "guard7": true,
+      "copied": true,
+      "sourceSteps": 4272,
+      "peakTotalBits": 172,
+      "peakSingleStackBits": 77,
+      "codeLookups": 2836
+    }
+  ],
+  "all_four_prefixes_halted_and_loaded": true,
+  "limitation": "Not the full SAT solver; no paper algorithm speed advantage established"
+}

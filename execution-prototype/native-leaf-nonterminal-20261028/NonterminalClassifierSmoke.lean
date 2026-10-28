@@ -1,0 +1,3 @@
+import NativeNonterminalClassifier
+
+#eval IndependentNonterminal.runClassification 400

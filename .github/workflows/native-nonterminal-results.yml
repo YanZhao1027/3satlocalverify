@@ -1,0 +1,24 @@
+name: Native nonterminal prefix measured-data checks
+on:
+  push:
+    paths:
+      - 'execution-prototype/native-leaf-nonterminal-20261028/**'
+      - '.github/workflows/native-nonterminal-results.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/native-leaf-nonterminal-20261028/**'
+      - '.github/workflows/native-nonterminal-results.yml'
+  workflow_dispatch:
+jobs:
+  offline-evidence-hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check source measurement archive and test entry points
+        run: |
+          python3 execution-prototype/native-leaf-nonterminal-20261028/validate_nonterminal_results.py
+          bash -n execution-prototype/native-leaf-nonterminal-20261028/check_nonterminal_prefix.sh
+          python3 -m py_compile execution-prototype/native-leaf-nonterminal-20261028/*.py

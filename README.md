@@ -70,3 +70,7 @@ We linked the original OpenAI **fixed native leaf command** and its `LeafContrac
 ## Research outlook and honest evidence boundary (2026-10-28)
 
 [Read our current assessment and next nonterminal execution target](docs/RESEARCH_OUTLOOK_20261028.md). The **original nonterminal native leaf remains unexecuted**; terminal-branch trace verification and low-width VE results are not demonstrations of end-to-end subexponential SAT speed. Our next milestone is a verified, actually executed nonterminal query with per-opcode and peak-space records.
+
+## Authentic nonterminal input: classification and leaf loading (2026-10-28)
+
+[Read the verified prefix experiment and its explicit limits](docs/NONTERMINAL_PREFIX_20261028.md). Four genuinely nonterminal CNFs now execute original classification and leaf loading. The first 100 complete machine states match the upstream source interpreter. **The original high-query counting algorithm has not been executed; oracle #SAT counts are reference values, not measured outputs.**

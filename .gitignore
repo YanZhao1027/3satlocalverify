@@ -23,3 +23,6 @@ verifiers/
 .native-leaf-audit-logs/
 .codex-internal/
 .native-terminal-audit-logs/
+
+# Local nonterminal Lean audit logs, cached instruction build artifacts
+.native-nonterminal-audit-logs/
