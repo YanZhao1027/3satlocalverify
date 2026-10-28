@@ -66,3 +66,7 @@ To run the checks on a workstation with OpenAI/math/Mathlib already provisioned:
 [Source-level report](docs/NATIVE_LEAF_BRIDGE_20261028.md) · [Research/acceptance protocol](docs/SOL_RESEARCH_PROTOCOL_20261028.md) · [Verified Lean modules](execution-prototype/native-leaf-audit-20261028/)
 
 We linked the original OpenAI **fixed native leaf command** and its `LeafContract` to the paper's original runtime envelope; proved a uniform polynomial cap can actually satisfy the leaf's three local budget minima; and independently checked the upstream final theorem's standard axioms. Three new Lean proofs and two original theorem audits pass using Lean 4.34.1, without `sorry` or additional axioms. **This does not extract or benchmark the complete original machine and does not independently establish a subexponential SAT algorithm.** The agent could not use the machine's shell sandbox; the coordinator compiled and verified Sol's proposed code manually.
+
+## Research outlook and honest evidence boundary (2026-10-28)
+
+[Read our current assessment and next nonterminal execution target](docs/RESEARCH_OUTLOOK_20261028.md). The **original nonterminal native leaf remains unexecuted**; terminal-branch trace verification and low-width VE results are not demonstrations of end-to-end subexponential SAT speed. Our next milestone is a verified, actually executed nonterminal query with per-opcode and peak-space records.
