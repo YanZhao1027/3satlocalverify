@@ -1,0 +1,542 @@
+[
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-00-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 490,
+      "hist": [
+        490,
+        434,
+        94,
+        6,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-01-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 472,
+      "hist": [
+        472,
+        472,
+        72,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-02-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 504,
+      "hist": [
+        504,
+        408,
+        104,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-03-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 554,
+      "hist": [
+        554,
+        334,
+        106,
+        26,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-04-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 514,
+      "hist": [
+        514,
+        394,
+        102,
+        14,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-05-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 520,
+      "hist": [
+        520,
+        376,
+        120,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-06-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 570,
+      "hist": [
+        570,
+        304,
+        116,
+        32,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-07-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 546,
+      "hist": [
+        546,
+        344,
+        108,
+        24,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-08-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 534,
+      "hist": [
+        534,
+        364,
+        104,
+        20,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-09-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 504,
+      "hist": [
+        504,
+        408,
+        104,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-10-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 524,
+      "hist": [
+        524,
+        364,
+        132,
+        4,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-11-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 488,
+      "hist": [
+        488,
+        440,
+        88,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-12-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 504,
+      "hist": [
+        504,
+        408,
+        104,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-13-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 504,
+      "hist": [
+        504,
+        408,
+        104,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-14-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 544,
+      "hist": [
+        544,
+        336,
+        128,
+        16,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-15-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 520,
+      "hist": [
+        520,
+        376,
+        120,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-16-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 540,
+      "hist": [
+        540,
+        360,
+        96,
+        24,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-17-n10.cnf",
+    "n": 10,
+    "oracle": {
+      "count": 500,
+      "hist": [
+        500,
+        420,
+        92,
+        12,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-18-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1114,
+      "hist": [
+        1114,
+        652,
+        224,
+        52,
+        6,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-19-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1008,
+      "hist": [
+        1008,
+        816,
+        208,
+        16,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-20-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1082,
+      "hist": [
+        1082,
+        688,
+        244,
+        32,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-21-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 984,
+      "hist": [
+        984,
+        856,
+        200,
+        8,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-22-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 980,
+      "hist": [
+        980,
+        868,
+        188,
+        12,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-23-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1086,
+      "hist": [
+        1086,
+        704,
+        204,
+        48,
+        6,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-24-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1032,
+      "hist": [
+        1032,
+        776,
+        216,
+        24,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-25-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1004,
+      "hist": [
+        1004,
+        828,
+        196,
+        20,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-26-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1078,
+      "hist": [
+        1078,
+        700,
+        232,
+        36,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-27-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1008,
+      "hist": [
+        1008,
+        816,
+        208,
+        16,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-28-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1147,
+      "hist": [
+        1147,
+        609,
+        218,
+        62,
+        11,
+        1
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-29-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1032,
+      "hist": [
+        1032,
+        776,
+        216,
+        24,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-30-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1001,
+      "hist": [
+        1001,
+        836,
+        190,
+        20,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-31-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1110,
+      "hist": [
+        1110,
+        664,
+        212,
+        56,
+        6,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-32-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1126,
+      "hist": [
+        1126,
+        641,
+        216,
+        54,
+        10,
+        1
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-33-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1099,
+      "hist": [
+        1099,
+        668,
+        234,
+        44,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-34-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1068,
+      "hist": [
+        1068,
+        728,
+        208,
+        40,
+        4,
+        0
+      ]
+    }
+  },
+  {
+    "path": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/primepower_connected/conn-35-n11.cnf",
+    "n": 11,
+    "oracle": {
+      "count": 1114,
+      "hist": [
+        1114,
+        652,
+        224,
+        52,
+        6,
+        0
+      ]
+    }
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "cnf": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/fixtures/connected-chain-16.cnf",
+  "generated_lean": "/home/zyubuntu/eth-lean-check-20261027/execution-prototype/paper-kernel-20261028/generated/ve_crt_connected_chain_16_q17_mu4_d3.lean",
+  "n": 16,
+  "m": 14,
+  "Q": 5,
+  "D": 3,
+  "prime": 17,
+  "precision": 4,
+  "modulus": 83521,
+  "count": 12741,
+  "crt_scalar_callbacks": 10899,
+  "lean_wall_s": 2.365,
+  "ve_stats": {
+    "n": 16,
+    "active_vars": 16,
+    "free_vars": 0,
+    "clause_count": 14,
+    "induced_width": 2,
+    "max_factor_table_entries": 8,
+    "eliminated_variables": 16,
+    "local_assignments": 59,
+    "factor_evaluations": 222,
+    "polynomial_coeff_multiplications": 633,
+    "polynomial_coeff_additions": 290,
+    "max_polynomial_degree": 8,
+    "histogram_length": 9
+  },
+  "all_coefficients_recovered": true,
+  "source_kernel": "OpenAI Reconstruction.run",
+  "caution": "VE Python sampler is tested, but not yet formally verified"
+}

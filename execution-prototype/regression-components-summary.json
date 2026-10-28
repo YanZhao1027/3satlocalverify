@@ -1,0 +1,12 @@
+{
+  "tested": 191,
+  "passed": 191,
+  "failed": 0,
+  "original_cases": 68,
+  "new_random_cases": 120,
+  "analytic_all_active_cases": 3,
+  "max_ambient_dimension": 1024,
+  "max_active_dimension": 1024,
+  "max_components": 256,
+  "elapsed_seconds": 1.491
+}

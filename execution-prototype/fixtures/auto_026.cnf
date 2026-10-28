@@ -1,0 +1,5 @@
+c deterministic randomized CNF
+p cnf 4 3
+-1 0
+1 0
+-1 0

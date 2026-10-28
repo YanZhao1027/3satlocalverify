@@ -1,0 +1,73 @@
+{
+  "total_cases": 277,
+  "all_passed": true,
+  "old_random_cases": 68,
+  "connected_test_cases": 84,
+  "new_random_cases": 120,
+  "independent_chain_cases": 5,
+  "max_variables": 256,
+  "chain_results": [
+    {
+      "n": 16,
+      "m": 14,
+      "sat_count": "12741",
+      "digits": 5,
+      "histogram_len": 9,
+      "max_induced_width": 2,
+      "elimination_assignments": 59,
+      "poly_multiplications": 633,
+      "ve_sec": 0.00042,
+      "transfer_sec": 0.00012
+    },
+    {
+      "n": 32,
+      "m": 30,
+      "sat_count": "112892768",
+      "digits": 9,
+      "histogram_len": 16,
+      "max_induced_width": 2,
+      "elimination_assignments": 123,
+      "poly_multiplications": 2286,
+      "ve_sec": 0.00113,
+      "transfer_sec": 0.00027
+    },
+    {
+      "n": 64,
+      "m": 62,
+      "sat_count": "11370557917191032",
+      "digits": 17,
+      "histogram_len": 36,
+      "max_induced_width": 2,
+      "elimination_assignments": 251,
+      "poly_multiplications": 8930,
+      "ve_sec": 0.00401,
+      "transfer_sec": 0.0007
+    },
+    {
+      "n": 128,
+      "m": 126,
+      "sat_count": "85624309740949273042031517716882",
+      "digits": 32,
+      "histogram_len": 70,
+      "max_induced_width": 2,
+      "elimination_assignments": 507,
+      "poly_multiplications": 35904,
+      "ve_sec": 0.01959,
+      "transfer_sec": 0.00216
+    },
+    {
+      "n": 256,
+      "m": 254,
+      "sat_count": "7442448147868944390163235886440032019063650821335827132081608786",
+      "digits": 64,
+      "histogram_len": 141,
+      "max_induced_width": 2,
+      "elimination_assignments": 1019,
+      "poly_multiplications": 143901,
+      "ve_sec": 0.11556,
+      "transfer_sec": 0.0072
+    }
+  ],
+  "elapsed_seconds": 0.3195,
+  "worst_case_warning": "Variable elimination is exponential in induced width, not generally subexponential in n"
+}

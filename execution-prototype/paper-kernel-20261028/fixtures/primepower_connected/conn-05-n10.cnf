@@ -1,0 +1,7 @@
+c connected 3SAT all 10 variables active
+p cnf 10 5
+10 6 -4 0
+3 -8 -4 0
+-10 -1 -2 0
+-9 -10 5 0
+-10 9 -7 0

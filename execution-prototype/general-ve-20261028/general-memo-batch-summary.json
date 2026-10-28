@@ -1,0 +1,18 @@
+{
+  "cases": 84,
+  "passed": 84,
+  "failed": 0,
+  "n8_9_cases": 48,
+  "n10_11_cases": 36,
+  "all_cases_connected": true,
+  "all_variables_active": true,
+  "modulus": 2401,
+  "crt_order": 2,
+  "nodes": 3,
+  "max_bucket_width": 9,
+  "median_lean_core_ms": 19.5,
+  "max_lean_core_ms": 583,
+  "wall_seconds": 7.291,
+  "checked": "all six histogram coefficients and exact integer #SAT against independent Python truth-table oracles",
+  "limitation": "not a worst-case subexponential SAT solver"
+}

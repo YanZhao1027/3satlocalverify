@@ -1,0 +1,12 @@
+{
+  "tested": 72,
+  "passed": 72,
+  "failed": 0,
+  "original_lean_trace_matches": 68,
+  "large_sparse_instances": 4,
+  "max_ambient_variables": 512,
+  "max_active_support": 9,
+  "total_branch_operations": 73,
+  "elapsed_seconds": 4.99,
+  "oracle": "independent Python support truth table plus free-variable factor"
+}

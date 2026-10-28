@@ -1,0 +1,7 @@
+c genuine connected 3CNF with all 11 variables used in five overlapping clauses
+p cnf 11 5
+1 2 3 0
+-3 4 5 0
+-5 6 7 0
+-7 8 9 0
+-9 10 11 0

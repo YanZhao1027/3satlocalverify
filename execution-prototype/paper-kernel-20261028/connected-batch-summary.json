@@ -1,0 +1,23 @@
+{
+  "all_passed": true,
+  "tests": 48,
+  "all_connected_and_all_active": true,
+  "n8": 24,
+  "n9": 24,
+  "m": 5,
+  "width": 3,
+  "crt_moduli": [
+    7,
+    11,
+    13
+  ],
+  "modulus_product": 1001,
+  "crt_callback_ops_per_instance": 6111,
+  "oracle_ms_median": 4.0,
+  "crt_and_walsh_ms_median": 278.5,
+  "crt_and_walsh_ms_min": 109,
+  "crt_and_walsh_ms_max": 659,
+  "python_runner_wall_seconds": 19.634,
+  "field_mod_coefficients_and_walsh_checked_independently": true,
+  "no_asymptotic_speedup_claimed": true
+}

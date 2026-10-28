@@ -1,0 +1,58 @@
+[
+  {
+    "formula": "random-3sat-18.cnf",
+    "n": 18,
+    "m": 55,
+    "threshold": 2,
+    "count": 499,
+    "median_seconds": 0.1914485,
+    "min_seconds": 0.1894332,
+    "steps": 2113,
+    "branches": 1056,
+    "leaves": 1057,
+    "maxPending": 18,
+    "leafDpllCalls": 1057
+  },
+  {
+    "formula": "random-3sat-18.cnf",
+    "n": 18,
+    "m": 55,
+    "threshold": 1000000,
+    "count": 499,
+    "median_seconds": 0.0020771,
+    "min_seconds": 0.0019439,
+    "steps": 1,
+    "branches": 0,
+    "leaves": 1,
+    "maxPending": 1,
+    "leafDpllCalls": 1
+  },
+  {
+    "formula": "all-pairs-32.cnf",
+    "n": 32,
+    "m": 496,
+    "threshold": 2,
+    "count": 33,
+    "median_seconds": 0.0331103,
+    "min_seconds": 0.0330165,
+    "steps": 61,
+    "branches": 30,
+    "leaves": 31,
+    "maxPending": 31,
+    "leafDpllCalls": 31
+  },
+  {
+    "formula": "all-pairs-32.cnf",
+    "n": 32,
+    "m": 496,
+    "threshold": 1000000,
+    "count": 33,
+    "median_seconds": 0.023415,
+    "min_seconds": 0.0230415,
+    "steps": 1,
+    "branches": 0,
+    "leaves": 1,
+    "maxPending": 1,
+    "leafDpllCalls": 1
+  }
+]

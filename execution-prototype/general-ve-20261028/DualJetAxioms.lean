@@ -1,0 +1,4 @@
+import DualJetProof
+#print axioms GeneralVEWeighted.weightedTotal_as_pow
+#print axioms GeneralVEWeighted.dualJet_value_correct
+#print axioms GeneralVEWeighted.dualJet_derivative_correct

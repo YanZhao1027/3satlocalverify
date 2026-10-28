@@ -1,0 +1,33 @@
+{
+  "cases": 48,
+  "all_passed": true,
+  "all_connected_and_all_active": true,
+  "m": 5,
+  "interpolation_modes": [
+    {
+      "order": 1,
+      "nodes": 6,
+      "scalar_callback_ops": 6111,
+      "per_formula_ms_median": 3.0,
+      "per_formula_ms_min": 3,
+      "per_formula_ms_max": 4
+    },
+    {
+      "order": 2,
+      "nodes": 3,
+      "scalar_callback_ops": 2919,
+      "per_formula_ms_median": 2.0,
+      "per_formula_ms_min": 1,
+      "per_formula_ms_max": 2
+    },
+    {
+      "order": 3,
+      "nodes": 2,
+      "scalar_callback_ops": 2201,
+      "per_formula_ms_median": 1.0,
+      "per_formula_ms_min": 1,
+      "per_formula_ms_max": 2
+    }
+  ],
+  "wall_seconds": 9.4
+}
