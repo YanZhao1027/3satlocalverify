@@ -22,3 +22,4 @@ verifiers/
 
 .native-leaf-audit-logs/
 .codex-internal/
+.native-terminal-audit-logs/

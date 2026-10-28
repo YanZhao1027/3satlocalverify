@@ -1,0 +1,16 @@
+import OriginalMachineCostBridge
+import TerminalResourceCertificate
+import TerminalBranchExecution
+
+#print axioms IndependentNativeExec.original_false_false
+#print axioms IndependentNativeExec.original_true
+#print axioms IndependentNativeExec.proxy_false_false
+#print axioms IndependentNativeExec.proxy_true
+#print axioms IndependentNativeExec.source_ready
+#print axioms IndependentNativeExec.empty_formula_terminates
+#print axioms IndependentNativeExec.empty_clause_terminates
+#print axioms IndependentNativeExec.full_ready_empty3
+#print axioms IndependentNativeExec.full_ready_emptyClause3
+#print axioms IndependentNativeExec.full_native_and_proxy_same_trace_empty3
+#print axioms IndependentNativeExec.full_native_terminal_TM2_primitive_and_dataBits
+#print axioms IndependentNativeExec.bounded_original_native_terminal3

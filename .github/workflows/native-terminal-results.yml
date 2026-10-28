@@ -1,0 +1,25 @@
+name: Native terminal measured-data checks
+on:
+  push:
+    paths:
+      - 'execution-prototype/native-leaf-execution-20261028/**'
+      - '.github/workflows/native-terminal-results.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/native-leaf-execution-20261028/**'
+      - '.github/workflows/native-terminal-results.yml'
+  workflow_dispatch:
+jobs:
+  measured-data-hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate checked-in trace measurements (no Lean upstream downloaded)
+        run: |
+          python3 execution-prototype/native-leaf-execution-20261028/validate_terminal_results.py
+          bash -n execution-prototype/native-leaf-execution-20261028/check_terminal_execution.sh
+          python3 -m py_compile execution-prototype/native-leaf-execution-20261028/parse_terminal_batch.py
+          python3 -m py_compile execution-prototype/native-leaf-execution-20261028/validate_terminal_results.py
