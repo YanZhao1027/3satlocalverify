@@ -47,3 +47,16 @@ We publish only our independent sources and lightweight test artifacts. No priva
 ## License
 
 No redistribution license has been selected for this independent repository yet. **Public visibility does not by itself grant a reuse license.** The separate upstream repositories retain their own licenses.
+
+## New: audited complexity and elimination-order analysis (2026-10-28)
+
+Read [the full Lean-backed cost and width report](docs/COMPLEXITY_20261028.md).
+
+- The actual memoized VE source has a verified **exact table-row accounting model**. With at most `w` variables per intermediate bucket, it creates at most `t * 2^w` output-factor rows in `t` elimination steps; this does **not** bound all machine operations.
+- A verified arbitrary-order theorem permits safe variable reordering. In one 64-variable connected 3-CNF, the canonical order costs `2^64-1` *predicted rows*, while reverse order costs 251 rows. Neither huge table was allocated.
+- A different complete-interaction 3-CNF family provably forces **width n for any first eliminated variable** within this raw VE framework (conditional combinatorial Lean theorem plus independently generated/checkable fixtures).
+- `PaperScaleBridge.lean` formally compares the row envelope to the original paper's `runtimeScale` **only under an explicit small-width hypothesis**; that hypothesis is not universally true for standard VE. This is not the full primitive-machine bit-time analysis of the paper.
+
+To run the checks on a workstation with OpenAI/math/Mathlib already provisioned:
+
+`execution-prototype/complexity-20261028/check_complexity.sh`

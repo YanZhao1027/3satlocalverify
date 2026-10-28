@@ -1,0 +1,25 @@
+name: Static complexity regression
+on:
+  push:
+    paths:
+      - 'execution-prototype/complexity-20261028/**'
+      - '.github/workflows/complexity-regression.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/complexity-20261028/**'
+      - '.github/workflows/complexity-regression.yml'
+  workflow_dispatch:
+jobs:
+  static-profiles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check exact static width model and independent oracle
+        working-directory: execution-prototype/complexity-20261028
+        run: |
+          python3 width_profile.py --out width-profile-results.json
+          python3 complete_graph_witness.py
+          python3 complexity_regression.py

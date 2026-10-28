@@ -1,0 +1,40 @@
+{
+  "construction": "one hub plus every pair of remaining variables",
+  "proof_argument": "Every pair of variables shares a 3-clause, so the primal graph is K_n and the first bucket always includes all n variables.",
+  "structural_only": true,
+  "does_not_prove_3SAT_hardness": true,
+  "results": [
+    {
+      "n": 8,
+      "m": 21,
+      "all_first_buckets_width_n": true,
+      "smallest_first_table_rows": "128",
+      "canonical_total_rows": "255",
+      "reverse_total_rows": "255"
+    },
+    {
+      "n": 16,
+      "m": 105,
+      "all_first_buckets_width_n": true,
+      "smallest_first_table_rows": "32768",
+      "canonical_total_rows": "65535",
+      "reverse_total_rows": "65535"
+    },
+    {
+      "n": 32,
+      "m": 465,
+      "all_first_buckets_width_n": true,
+      "smallest_first_table_rows": "2147483648",
+      "canonical_total_rows": "4294967295",
+      "reverse_total_rows": "4294967295"
+    },
+    {
+      "n": 64,
+      "m": 1953,
+      "all_first_buckets_width_n": true,
+      "smallest_first_table_rows": "9223372036854775808",
+      "canonical_total_rows": "18446744073709551615",
+      "reverse_total_rows": "18446744073709551615"
+    }
+  ]
+}

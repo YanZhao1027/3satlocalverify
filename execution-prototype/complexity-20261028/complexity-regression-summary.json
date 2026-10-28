@@ -1,0 +1,13 @@
+{
+  "mode": "static width plus Fibonacci model cross-check",
+  "checked_cases": 39,
+  "all_passed": true,
+  "supported_star_counts": {
+    "16": "34365",
+    "32": "2151008226",
+    "64": "9223389204534953373"
+  },
+  "dense_first_bucket_property": true,
+  "notes": "Does not allocate any exponential table. Lean proof audit and Lean counter values checked separately.",
+  "elapsed_s": 0.0
+}

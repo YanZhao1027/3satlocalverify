@@ -1,0 +1,1101 @@
+{
+  "samples": 32,
+  "note": "STATIC table row count only; no exponential factor tables materialized",
+  "case_results": [
+    {
+      "kind": "chain",
+      "n": 16,
+      "clauses": 14,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 0,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "59"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "59"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "59"
+        }
+      ]
+    },
+    {
+      "kind": "star",
+      "n": 16,
+      "clauses": 14,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 0,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 16,
+          "peak_table_scope": 15,
+          "max_table_rows": "32768",
+          "total_table_rows": "65535"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "59"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "59"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 16,
+      "clauses": 64,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 11600,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 15,
+          "peak_table_scope": 14,
+          "max_table_rows": "16384",
+          "total_table_rows": "49151"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 12,
+          "peak_table_scope": 11,
+          "max_table_rows": "2048",
+          "total_table_rows": "7743"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 12,
+          "peak_table_scope": 11,
+          "max_table_rows": "2048",
+          "total_table_rows": "7743"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 16,
+      "clauses": 64,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 11601,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 15,
+          "peak_table_scope": 14,
+          "max_table_rows": "16384",
+          "total_table_rows": "40959"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 12,
+          "peak_table_scope": 11,
+          "max_table_rows": "2048",
+          "total_table_rows": "6911"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 12,
+          "peak_table_scope": 11,
+          "max_table_rows": "2048",
+          "total_table_rows": "6911"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 16,
+      "clauses": 64,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 11602,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 15,
+          "peak_table_scope": 14,
+          "max_table_rows": "16384",
+          "total_table_rows": "34815"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 13,
+          "peak_table_scope": 12,
+          "max_table_rows": "4096",
+          "total_table_rows": "13311"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 13,
+          "peak_table_scope": 12,
+          "max_table_rows": "4096",
+          "total_table_rows": "13311"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 16,
+      "clauses": 64,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 11603,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 15,
+          "peak_table_scope": 14,
+          "max_table_rows": "16384",
+          "total_table_rows": "49151"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 13,
+          "peak_table_scope": 12,
+          "max_table_rows": "4096",
+          "total_table_rows": "13823"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 13,
+          "peak_table_scope": 12,
+          "max_table_rows": "4096",
+          "total_table_rows": "13823"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 16,
+      "clauses": 64,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 11604,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 15,
+          "peak_table_scope": 14,
+          "max_table_rows": "16384",
+          "total_table_rows": "40959"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 12,
+          "peak_table_scope": 11,
+          "max_table_rows": "2048",
+          "total_table_rows": "10239"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 12,
+          "peak_table_scope": 11,
+          "max_table_rows": "2048",
+          "total_table_rows": "10239"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 16,
+      "clauses": 64,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 11605,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 15,
+          "peak_table_scope": 14,
+          "max_table_rows": "16384",
+          "total_table_rows": "36863"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 13,
+          "peak_table_scope": 12,
+          "max_table_rows": "4096",
+          "total_table_rows": "14591"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 13,
+          "peak_table_scope": 12,
+          "max_table_rows": "4096",
+          "total_table_rows": "14591"
+        }
+      ]
+    },
+    {
+      "kind": "chain",
+      "n": 32,
+      "clauses": 30,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 0,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "123"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "123"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "123"
+        }
+      ]
+    },
+    {
+      "kind": "star",
+      "n": 32,
+      "clauses": 30,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 0,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 32,
+          "peak_table_scope": 31,
+          "max_table_rows": "2147483648",
+          "total_table_rows": "4294967295"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "123"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "123"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 32,
+      "clauses": 128,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 13200,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 27,
+          "peak_table_scope": 26,
+          "max_table_rows": "67108864",
+          "total_table_rows": "211976191"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 23,
+          "peak_table_scope": 22,
+          "max_table_rows": "4194304",
+          "total_table_rows": "12470271"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 23,
+          "peak_table_scope": 22,
+          "max_table_rows": "4194304",
+          "total_table_rows": "11732991"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 32,
+      "clauses": 128,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 13201,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 27,
+          "peak_table_scope": 26,
+          "max_table_rows": "67108864",
+          "total_table_rows": "256114687"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 24,
+          "peak_table_scope": 23,
+          "max_table_rows": "8388608",
+          "total_table_rows": "19985407"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 23,
+          "peak_table_scope": 22,
+          "max_table_rows": "4194304",
+          "total_table_rows": "17134591"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 32,
+      "clauses": 128,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 13202,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 26,
+          "peak_table_scope": 25,
+          "max_table_rows": "33554432",
+          "total_table_rows": "80349311"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 22,
+          "peak_table_scope": 21,
+          "max_table_rows": "2097152",
+          "total_table_rows": "6473855"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 22,
+          "peak_table_scope": 21,
+          "max_table_rows": "2097152",
+          "total_table_rows": "7522431"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 32,
+      "clauses": 128,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 13203,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 28,
+          "peak_table_scope": 27,
+          "max_table_rows": "134217728",
+          "total_table_rows": "336756735"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 23,
+          "peak_table_scope": 22,
+          "max_table_rows": "4194304",
+          "total_table_rows": "12841087"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 22,
+          "peak_table_scope": 21,
+          "max_table_rows": "2097152",
+          "total_table_rows": "10711167"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 32,
+      "clauses": 128,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 13204,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 27,
+          "peak_table_scope": 26,
+          "max_table_rows": "67108864",
+          "total_table_rows": "303300607"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 22,
+          "peak_table_scope": 21,
+          "max_table_rows": "2097152",
+          "total_table_rows": "8307263"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 22,
+          "peak_table_scope": 21,
+          "max_table_rows": "2097152",
+          "total_table_rows": "9519679"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 32,
+      "clauses": 128,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 13205,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 27,
+          "peak_table_scope": 26,
+          "max_table_rows": "67108864",
+          "total_table_rows": "337641471"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 22,
+          "peak_table_scope": 21,
+          "max_table_rows": "2097152",
+          "total_table_rows": "6962495"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 22,
+          "peak_table_scope": 21,
+          "max_table_rows": "2097152",
+          "total_table_rows": "8797503"
+        }
+      ]
+    },
+    {
+      "kind": "chain",
+      "n": 48,
+      "clauses": 46,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 0,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "187"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "187"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "187"
+        }
+      ]
+    },
+    {
+      "kind": "star",
+      "n": 48,
+      "clauses": 46,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 0,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 48,
+          "peak_table_scope": 47,
+          "max_table_rows": "140737488355328",
+          "total_table_rows": "281474976710655"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "187"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "187"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 48,
+      "clauses": 192,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 14800,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 43,
+          "peak_table_scope": 42,
+          "max_table_rows": "4398046511104",
+          "total_table_rows": "10789024956415"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 34,
+          "peak_table_scope": 33,
+          "max_table_rows": "8589934592",
+          "total_table_rows": "34444190463"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 34,
+          "peak_table_scope": 33,
+          "max_table_rows": "8589934592",
+          "total_table_rows": "31206908671"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 48,
+      "clauses": 192,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 14801,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 38,
+          "peak_table_scope": 37,
+          "max_table_rows": "137438953472",
+          "total_table_rows": "593782374399"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 32,
+          "peak_table_scope": 31,
+          "max_table_rows": "2147483648",
+          "total_table_rows": "6880077183"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 32,
+          "peak_table_scope": 31,
+          "max_table_rows": "2147483648",
+          "total_table_rows": "5922858367"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 48,
+      "clauses": 192,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 14802,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 40,
+          "peak_table_scope": 39,
+          "max_table_rows": "549755813888",
+          "total_table_rows": "1804425302015"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 32,
+          "peak_table_scope": 31,
+          "max_table_rows": "2147483648",
+          "total_table_rows": "5290228991"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 30,
+          "peak_table_scope": 29,
+          "max_table_rows": "536870912",
+          "total_table_rows": "3134881023"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 48,
+      "clauses": 192,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 14803,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 39,
+          "peak_table_scope": 38,
+          "max_table_rows": "274877906944",
+          "total_table_rows": "636225979391"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 34,
+          "peak_table_scope": 33,
+          "max_table_rows": "8589934592",
+          "total_table_rows": "20586631167"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 33,
+          "peak_table_scope": 32,
+          "max_table_rows": "4294967296",
+          "total_table_rows": "17365536767"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 48,
+      "clauses": 192,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 14804,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 42,
+          "peak_table_scope": 41,
+          "max_table_rows": "2199023255552",
+          "total_table_rows": "6605662355455"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 34,
+          "peak_table_scope": 33,
+          "max_table_rows": "8589934592",
+          "total_table_rows": "22684328703"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 33,
+          "peak_table_scope": 32,
+          "max_table_rows": "4294967296",
+          "total_table_rows": "17729807103"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 48,
+      "clauses": 192,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 14805,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 40,
+          "peak_table_scope": 39,
+          "max_table_rows": "549755813888",
+          "total_table_rows": "1522097193087"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 34,
+          "peak_table_scope": 33,
+          "max_table_rows": "8589934592",
+          "total_table_rows": "28290781951"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 32,
+          "peak_table_scope": 31,
+          "max_table_rows": "2147483648",
+          "total_table_rows": "11040314111"
+        }
+      ]
+    },
+    {
+      "kind": "chain",
+      "n": 64,
+      "clauses": 62,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 0,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "251"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "251"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "251"
+        }
+      ]
+    },
+    {
+      "kind": "star",
+      "n": 64,
+      "clauses": 62,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 0,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 64,
+          "peak_table_scope": 63,
+          "max_table_rows": "9223372036854775808",
+          "total_table_rows": "18446744073709551615"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "251"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 3,
+          "peak_table_scope": 2,
+          "max_table_rows": "4",
+          "total_table_rows": "251"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 64,
+      "clauses": 256,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 16400,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 55,
+          "peak_table_scope": 54,
+          "max_table_rows": "18014398509481984",
+          "total_table_rows": "41394414836350975"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 44,
+          "peak_table_scope": 43,
+          "max_table_rows": "8796093022208",
+          "total_table_rows": "17800811530239"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 42,
+          "peak_table_scope": 41,
+          "max_table_rows": "2199023255552",
+          "total_table_rows": "8866329839615"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 64,
+      "clauses": 256,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 16401,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 53,
+          "peak_table_scope": 52,
+          "max_table_rows": "4503599627370496",
+          "total_table_rows": "11874759977533503"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 44,
+          "peak_table_scope": 43,
+          "max_table_rows": "8796093022208",
+          "total_table_rows": "21320389902399"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 45,
+          "peak_table_scope": 44,
+          "max_table_rows": "17592186044416",
+          "total_table_rows": "38603245174847"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 64,
+      "clauses": 256,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 16402,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 52,
+          "peak_table_scope": 51,
+          "max_table_rows": "2251799813685248",
+          "total_table_rows": "12736742765371391"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 43,
+          "peak_table_scope": 42,
+          "max_table_rows": "4398046511104",
+          "total_table_rows": "18726336620543"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 42,
+          "peak_table_scope": 41,
+          "max_table_rows": "2199023255552",
+          "total_table_rows": "10721188669439"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 64,
+      "clauses": 256,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 16403,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 55,
+          "peak_table_scope": 54,
+          "max_table_rows": "18014398509481984",
+          "total_table_rows": "46303750366699519"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 46,
+          "peak_table_scope": 45,
+          "max_table_rows": "35184372088832",
+          "total_table_rows": "97892124090367"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 43,
+          "peak_table_scope": 42,
+          "max_table_rows": "4398046511104",
+          "total_table_rows": "20240705134591"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 64,
+      "clauses": 256,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 16404,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 55,
+          "peak_table_scope": 54,
+          "max_table_rows": "18014398509481984",
+          "total_table_rows": "95842779866857471"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 43,
+          "peak_table_scope": 42,
+          "max_table_rows": "4398046511104",
+          "total_table_rows": "9634234534271"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 42,
+          "peak_table_scope": 41,
+          "max_table_rows": "2199023255552",
+          "total_table_rows": "7559832439167"
+        }
+      ]
+    },
+    {
+      "kind": "random",
+      "n": 64,
+      "clauses": 256,
+      "all_active": true,
+      "connected": true,
+      "initial_width": 3,
+      "seed": 16405,
+      "orders": [
+        {
+          "mode": "canonical",
+          "peak_bucket_width": 54,
+          "peak_table_scope": 53,
+          "max_table_rows": "9007199254740992",
+          "total_table_rows": "40813873100005375"
+        },
+        {
+          "mode": "min_degree",
+          "peak_bucket_width": 45,
+          "peak_table_scope": 44,
+          "max_table_rows": "17592186044416",
+          "total_table_rows": "40168897859583"
+        },
+        {
+          "mode": "min_fill",
+          "peak_bucket_width": 44,
+          "peak_table_scope": 43,
+          "max_table_rows": "8796093022208",
+          "total_table_rows": "24339935006719"
+        }
+      ]
+    }
+  ],
+  "random_width_summary": {
+    "16": {
+      "canonical": {
+        "peak_width_median": 15.0,
+        "peak_width_min": 15,
+        "peak_width_max": 15
+      },
+      "min_degree": {
+        "peak_width_median": 12.5,
+        "peak_width_min": 12,
+        "peak_width_max": 13
+      },
+      "min_fill": {
+        "peak_width_median": 12.5,
+        "peak_width_min": 12,
+        "peak_width_max": 13
+      }
+    },
+    "32": {
+      "canonical": {
+        "peak_width_median": 27.0,
+        "peak_width_min": 26,
+        "peak_width_max": 28
+      },
+      "min_degree": {
+        "peak_width_median": 22.5,
+        "peak_width_min": 22,
+        "peak_width_max": 24
+      },
+      "min_fill": {
+        "peak_width_median": 22.0,
+        "peak_width_min": 22,
+        "peak_width_max": 23
+      }
+    },
+    "48": {
+      "canonical": {
+        "peak_width_median": 40.0,
+        "peak_width_min": 38,
+        "peak_width_max": 43
+      },
+      "min_degree": {
+        "peak_width_median": 34.0,
+        "peak_width_min": 32,
+        "peak_width_max": 34
+      },
+      "min_fill": {
+        "peak_width_median": 32.5,
+        "peak_width_min": 30,
+        "peak_width_max": 34
+      }
+    },
+    "64": {
+      "canonical": {
+        "peak_width_median": 54.5,
+        "peak_width_min": 52,
+        "peak_width_max": 55
+      },
+      "min_degree": {
+        "peak_width_median": 44.0,
+        "peak_width_min": 43,
+        "peak_width_max": 46
+      },
+      "min_fill": {
+        "peak_width_median": 42.5,
+        "peak_width_min": 42,
+        "peak_width_max": 45
+      }
+    }
+  },
+  "elapsed_sec": 2.2696
+}
