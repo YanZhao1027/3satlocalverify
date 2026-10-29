@@ -1,0 +1,7 @@
+import NativeStartOriginalCodeProbe
+
+#print axioms IndependentNativeStart.OriginalCodeProbe.original_source_labels
+#print axioms IndependentNonterminal.FastLinearize.instructionArray_size
+#print axioms IndependentNativeCost.PhysicalPort.register_exact
+#print axioms IndependentNativeCost.PhysicalPort.stack_exact
+#print axioms IndependentNativeCost.PhysicalStream.physicalNumericOne_refines_original

@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-29",
+  "upstream": "Original OpenAI/math commit 7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a, Lean 4.34.1",
+  "input": "original three-variable nonempty CNF with one positive unit clause x0, n=3, B=8",
+  "method": "Original fixed source bit-instructions re-linked by independent numeric compiler, faithfully mapped to 40 registers / 896 physical virtual stacks.",
+  "stage_refinement": {
+    "clause_count_source_steps": 180,
+    "hash_source_steps": 3585,
+    "cleanup_source_steps": 2348,
+    "save_width_source_steps": 23,
+    "staged_instructions_including_four_terminal_halts": 6136,
+    "staged_cleanup_matches_original_budget": true,
+    "staged_save_width_matches_original_budget": true
+  },
+  "source_leaf_outer_start": {
+    "original_command_sites": 3035,
+    "connected_program_labels": 3036,
+    "actual_bit_instructions_including_one_halt": 6135,
+    "visited_source_labels": 3009,
+    "peak_occupied_stack_data_bits": 125,
+    "longest_single_stack_bits": 22,
+    "final_occupied_data_bits": 53,
+    "full_machine_state_matches_independent_origins_at_four_boundaries": true,
+    "all_6135_steps_recount_all_896_stacks": true,
+    "linked_execution_ms": 1294
+  },
+  "source_canonical_stage": {
+    "original_saveCanonical_sites": 125,
+    "staged_original_source_instructions": 951,
+    "canonical_modulus": 3,
+    "digit_width": 2,
+    "distance_denom": 1280000,
+    "unary_round_count": 10
+  },
+  "source_native_canonical_start": {
+    "original_command_sites": 3160,
+    "connected_program_labels": 3161,
+    "actual_bit_instructions_including_one_halt": 7085,
+    "visited_source_labels": 3134,
+    "peak_occupied_stack_data_bits": 125,
+    "longest_single_stack_bits": 22,
+    "final_occupied_data_bits": 86,
+    "full_machine_state_matches_independent_sources_at_both_boundaries": true,
+    "all_7085_steps_recount_all_896_stacks": true,
+    "lean_process_wall_seconds_from_run_log": "4.12",
+    "produced_hash_modulus": 3,
+    "denominator_817": 1280000,
+    "unary_rounds_781": 10
+  },
+  "original_upstream_compiled_start_source_code_samples": [
+    {
+      "label": 3,
+      "status": "PASS"
+    },
+    {
+      "label": 41,
+      "status": "TIMEOUT"
+    },
+    {
+      "label": 677,
+      "status": "PASS"
+    },
+    {
+      "label": 678,
+      "status": "TIMEOUT"
+    },
+    {
+      "label": 3025,
+      "status": "PASS"
+    }
+  ],
+  "native_start_total_source_label_count_kernel_proof": true,
+  "original_compiler_full_3036_or_3161_label_equivalence_proved": false,
+  "high_query_counting_executed": false,
+  "end_to_end_SAT_speedup_established": false,
+  "limitations": [
+    "The physical native leaf preparation is a fixed setup component, not an executable general subexponential #SAT solver.",
+    "Linking is independently implemented and kernel/probe tested, not a complete universal equivalence theorem for original StructuredCalls.compiled.start.",
+    "Three of five expensive direct original whole-start opcode samples passed; two timed out, and no global source opcode equality is claimed.",
+    "Bit instruction counts include actual static routing and stack clearing; Linux RSS/Lean wall clock are not theoretical Turing machine resource bounds.",
+    "The 3-variable one-clause input is a tiny trivial CNF and not a worst-case benchmark."
+  ]
+}

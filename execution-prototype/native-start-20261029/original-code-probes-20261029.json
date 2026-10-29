@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-29",
+  "source": "unchanged upstream StructuredCalls.compiled LeafOuterProgram.start.code",
+  "disclaimer": "Finite sampled opcode audit, NOT all 3036 positions. TIMEOUT counts as unverified, not a mismatch and not success.",
+  "timeout_per_label_seconds": 57,
+  "concurrent_lean_workers": 3,
+  "results": [
+    {"label": 3, "status": "PASS", "elapsed_seconds": 32.67},
+    {"label": 41, "status": "TIMEOUT", "elapsed_seconds": 57.17},
+    {"label": 677, "status": "PASS", "elapsed_seconds": 32.73},
+    {"label": 678, "status": "TIMEOUT", "elapsed_seconds": 57.18},
+    {"label": 3025, "status": "PASS", "elapsed_seconds": 32.4}
+  ]
+}

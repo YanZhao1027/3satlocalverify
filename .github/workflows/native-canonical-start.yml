@@ -1,0 +1,24 @@
+name: Original native SAT canonical startup evidence
+on:
+  push:
+    paths:
+      - 'execution-prototype/native-start-20261029/**'
+      - '.github/workflows/native-canonical-start.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/native-start-20261029/**'
+      - '.github/workflows/native-canonical-start.yml'
+  workflow_dispatch:
+jobs:
+  archive-syntax-and-evidence-hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate exact reported steps, gaps, and source archive format
+        run: |
+          python3 execution-prototype/native-start-20261029/validate_native_start_results.py
+          python3 -m py_compile execution-prototype/native-start-20261029/*.py
+          bash -n execution-prototype/native-start-20261029/check_native_canonical_start.sh

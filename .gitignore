@@ -32,3 +32,7 @@ verifiers/
 
 # Local execution-only original SAT leaf proof/VM cost logs
 .native-physical-40x896-logs/
+
+# Pinned original source opcode / canonical-start Lean measurements
+.native-start-source-probe-logs/
+.native-start-canonical-logs/
