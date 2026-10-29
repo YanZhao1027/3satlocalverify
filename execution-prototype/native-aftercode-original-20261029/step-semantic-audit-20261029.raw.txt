@@ -1,0 +1,1 @@
+ORIGINAL_BITPROGRAM_COMPACT_STEP_DIFFERENTIAL_PASS cases=536 originalLabels=119 extraOpcodeCases=15 physicalRegisters=40 physicalStacks=896

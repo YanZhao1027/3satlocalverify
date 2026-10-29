@@ -1,0 +1,39 @@
+DIRECT_ORIGINAL_COMPILER sourceLabels=119 originalTableSize=119 independentTableSize=119 originalEntry=1
+DIRECT_ORIGINAL_ALL_OPCODES_MATCH labels=119
+PHYSICAL_PARAM_CANONICAL halted=true steps=7085 m=1 B=8 dataBits=86
+PHYSICAL_PARAM_INPUTS halted=true steps=55 codeLabels=26 inputM=1 inputB=8 peakBits=91
+PHYSICAL_PARAM_ORIGINAL_CORE halted=true steps=9130 localSteps=9130 innerLabels=1499 mappedLabels=1499 fullMappedStateEqual=true q=1600 peakBits=251
+PHYSICAL_PARAM_OUTPUTS halted=true steps=278 codeLabels=169 savedGapDenom=1600 all14MetadataCorrect=true peakBits=252
+PHYSICAL_PARAM_CLEANUP halted=true steps=2636 sourceCostFormula=2636 workerClean=true registersClear=true metadataIntact=true peakBits=252 finalDataBits=108
+PHYSICAL_PARAMS_FIVE_STAGES_PASS sourceStepsIncludingFiveHalts=19184 peakStackBits=252 completeFromOriginalNonemptyCNF=true outputVerified=true internalWallMs=1454
+TWO_SEARCH_START actualParametersReady=true sourcePeakDataBits=252
+TWO_SEARCH_ROUTE name=graph_input halted=true steps=135 labels=59 peakBits=121
+TWO_SEARCH_CORE name=graph_search halted=true steps=2680 sourceLabels=928 mappedLabels=928 peakBits=186 maxSingle=21 selectedWord29=0 selectedWord18=0
+TWO_SEARCH_SOURCE_MAPPING_AUDIT name=graph_search all16RegistersAnd48StacksEqual=true executedSteps=2680
+TWO_SEARCH_ROUTE name=graph_save halted=true steps=9 labels=12 peakBits=121
+TWO_SEARCH_ROUTE name=graph_clear48 halted=true steps=174 labels=148 peakBits=121
+TWO_SEARCH_GRAPH_COMPLETE candidateSaved816Bits=0 all48WorkStacksClean=true copiedCandidateCorrect=true
+TWO_SEARCH_ROUTE name=local_input halted=true steps=64 labels=48 peakBits=112
+TWO_SEARCH_CORE name=local_search halted=true steps=5598 sourceLabels=668 mappedLabels=668 peakBits=165 maxSingle=21 selectedWord29=0 selectedWord18=5
+TWO_SEARCH_SOURCE_MAPPING_AUDIT name=local_search all16RegistersAnd48StacksEqual=true executedSteps=5598
+TWO_SEARCH_ROUTE name=local_save halted=true steps=44 labels=12 peakBits=122
+TWO_SEARCH_ROUTE name=local_clear48 halted=true steps=166 labels=148 peakBits=122
+TWO_SEARCH_BOTH_COMPLETE candidateGraph816Bits=0 candidateLocal815Bits=5 bothCandidatesPersisted=true all48WorkStacksClean=true bothSourceSearchSteps=8278 allEightSubstagesStepsIncludingHalts=8870 peakDataBitsFromParametersToBothSearches=252 totalWallInternalMs=4647
+SERIALIZER_REAL_INPUT codeD=1 graphMatrix816Bits=0 localMatrix815Bits=5 actualInputDataBits=113
+SERIALIZER_INPUT_ROUTE halted=true steps=160 sourceLabels=103 inputWidth=2 graphWord9=0 localWord10=5
+SERIALIZER_REAL_ROW_SOURCE sourceLabels=739 mappedLabels=739 entry=1 fuel=180000
+SERIALIZER_REAL_ROW_CORE halted=true executedSteps=715 peakStackBits=138 visitedSourceLabels=516 outputRowBits=13 original16x64StateEqualsPhysical=true
+SERIALIZER_ORIGINAL_OUTPUT_ROUTE halted=true executedSteps=103 rowSavedTo777=true persistedRowBits=13
+SERIALIZER_FINAL_CLEANUP halted=true steps=2396 expectedOriginalBudget=2396 all768WorkerStacksEmpty=true allRegistersZero=true rowAndBothMatricesPersist=true row777Bits=13 finalDataBits=126
+SERIALIZER_FOUR_ORIGINAL_STAGES_PASS sourceBitInstructionsWithIndividualHalts=3374 peakBitsAfterSearch=150 rowSaved777Bits=13 totalInternalMs=4733
+DIRECT_ORIGINAL_INPUT sourceRowBits=13 theoreticalZeroWordBits=5120003 initialDataBits=126
+DIRECT_ORIGINAL_PROGRESS chunk=1 steps=1000000 halted=false sourcePC=(some 108) zeroWordBits=17614 peakDataBits=17744 longestStack=17614 push=242304 pop=246720 peek=13209 branch=264340 goto=13224 set=26421 copy=0 bitLogic=193782 halt=0 chunkMs=1163
+DIRECT_ORIGINAL_PROGRESS chunk=2 steps=2000000 halted=false sourcePC=(some 93) zeroWordBits=35238 peakDataBits=35368 longestStack=35238 push=484598 pop=493418 peek=26427 branch=528659 goto=26441 set=52855 copy=0 bitLogic=387602 halt=0 chunkMs=1739
+DIRECT_ORIGINAL_PROGRESS chunk=3 steps=3000000 halted=false sourcePC=(some 101) zeroWordBits=52858 peakDataBits=52988 longestStack=52858 push=726886 pop=740111 peek=39642 branch=792971 goto=39657 set=79287 copy=0 bitLogic=581446 halt=0 chunkMs=2968
+DIRECT_ORIGINAL_PROGRESS chunk=4 steps=4000000 halted=false sourcePC=(some 106) zeroWordBits=70478 peakDataBits=70608 longestStack=70478 push=969176 pop=986807 peek=52857 branch=1057288 goto=52872 set=105717 copy=0 bitLogic=775283 halt=0 chunkMs=4237
+DIRECT_ORIGINAL_PROGRESS chunk=5 steps=5000000 halted=false sourcePC=(some 74) zeroWordBits=88098 peakDataBits=88228 longestStack=88098 push=1211470 pop=1233508 peek=66072 branch=1321610 goto=66088 set=132147 copy=0 bitLogic=969105 halt=0 chunkMs=5177
+DIRECT_ORIGINAL_PROGRESS chunk=6 steps=6000000 halted=false sourcePC=(some 105) zeroWordBits=105722 peakDataBits=105852 longestStack=105722 push=1453759 pop=1480200 peek=79290 branch=1585922 goto=79305 set=158583 copy=0 bitLogic=1162941 halt=0 chunkMs=6049
+DIRECT_ORIGINAL_PROGRESS chunk=7 steps=7000000 halted=false sourcePC=(some 103) zeroWordBits=123342 peakDataBits=123472 longestStack=123342 push=1696048 pop=1726895 peek=92505 branch=1850241 goto=92520 set=185013 copy=0 bitLogic=1356778 halt=0 chunkMs=6978
+DIRECT_ORIGINAL_PROGRESS chunk=8 steps=8000000 halted=false sourcePC=(some 108) zeroWordBits=140962 peakDataBits=141092 longestStack=140962 push=1938340 pop=1973593 peek=105720 branch=2114560 goto=105735 set=211443 copy=0 bitLogic=1550609 halt=0 chunkMs=7926
+DIRECT_ORIGINAL_RESULT steps=8000000 halted=false currentBits=140962 targetBits=5120003 maxDataBits=141092 rowsPreserved=true allOpcodesMatch=true sourceFromUpstream=true runMs=41380
+WALL=44.34s RSS_KB=8131940kB EXIT=0
