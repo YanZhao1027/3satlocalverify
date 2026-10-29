@@ -15,6 +15,11 @@ class BoardRegistryTests(unittest.TestCase):
         cls.data = json.loads(rb.REGISTRY.read_text(encoding="utf-8"))
         cls.evidence = rb.validate(cls.data)
 
+    def test_action_queue_moves_on_to_full_preparation(self):
+        board = rb.board_text(self.data, self.evidence)
+        self.assertIn("G05 的完整原版准备命令单程序运行", board)
+        self.assertNotIn("G04 的原版 afterCode 完整执行", board)
+
     def test_full_halt_evidence_does_not_close_global_gate(self):
         g04 = self.data["gates"][3]
         g05 = self.data["gates"][4]
