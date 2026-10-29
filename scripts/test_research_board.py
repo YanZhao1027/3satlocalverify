@@ -15,13 +15,38 @@ class BoardRegistryTests(unittest.TestCase):
         cls.data = json.loads(rb.REGISTRY.read_text(encoding="utf-8"))
         cls.evidence = rb.validate(cls.data)
 
+    def test_full_halt_evidence_does_not_close_global_gate(self):
+        g04 = self.data["gates"][3]
+        g05 = self.data["gates"][4]
+        self.assertEqual(g04["status"], "sample_verified")
+        self.assertEqual(g05["status"], "open")
+        self.assertIn("EV-015", g04["evidence_ids"])
+        self.assertIn("EV-016", g05["evidence_ids"])
+        note = (rb.ROOT / "research/evidence/G04_AFTERCODE_HALTED_20261029.md").read_text()
+        self.assertIn("290,560,512", note)
+        self.assertIn("8323964865602a50b772ecb82b42d5a0d6c14e16", note)
+
+    def test_stage5_lean_axioms_and_runtime_samples(self):
+        import re
+        proof = (rb.ROOT / "research/evidence/G05_FULLPREP_CERTIFICATE_AXIOMS_20261029.raw.txt").read_text()
+        found = re.findall(r"'([^']+)' depends on axioms: \[([^]]+)\]", proof, re.S)
+        self.assertEqual(len(found), 4)
+        for name, axioms in found:
+            self.assertTrue(name.startswith("IndependentFullPreparationDirectCertificate."))
+            self.assertEqual({a.strip() for a in axioms.split(",")},
+                {"propext","Classical.choice","Quot.sound"})
+        run = (rb.ROOT / "research/evidence/G05_LAZY_ORIGINAL_OPCODE_20261029.raw.txt").read_text()
+        self.assertIn("FULL_NATIVE_LAZY_SAMPLE_PASS", run)
+        self.assertEqual(len(re.findall(r"^FULL_NATIVE_LAZY_SOURCE_OPCODE ",run,re.M)), 9)
+        self.assertIn("FULL_NATIVE_SOURCE_LABELS=12539 entry=3",run)
+
     def test_expected_gate_counts(self):
         self.assertEqual(len(self.data["gates"]), 10)
-        self.assertEqual(len(self.evidence), 14)
+        self.assertEqual(len(self.evidence), 17)
         stats = Counter(x["status"] for x in self.data["gates"])
         self.assertEqual(stats["passed"], 0)
-        self.assertEqual(stats["sample_verified"], 2)
-        self.assertEqual(stats["partial"], 4)
+        self.assertEqual(stats["sample_verified"], 3)
+        self.assertEqual(stats["partial"], 3)
         self.assertEqual(stats["open"], 4)
 
     def test_derived_docs_are_exact(self):
