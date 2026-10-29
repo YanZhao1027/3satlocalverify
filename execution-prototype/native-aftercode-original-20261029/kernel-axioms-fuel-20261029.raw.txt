@@ -1,0 +1,5 @@
+'IndependentNativeTraceProof.all_fuel_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentNativeTraceProof.bitStep_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentNativeTraceProof.sourceArray_is_ofFn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentNativeTraceProof.direct_table_fuel_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+LEAN_WALL=3.08s RSS_KB=7982740
