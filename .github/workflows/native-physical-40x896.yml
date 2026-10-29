@@ -1,0 +1,24 @@
+name: Physical 40x896 native hash preparation evidence
+on:
+  push:
+    paths:
+      - 'execution-prototype/native-core-cost-20261028/**'
+      - '.github/workflows/native-physical-40x896.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/native-core-cost-20261028/**'
+      - '.github/workflows/native-physical-40x896.yml'
+  workflow_dispatch:
+jobs:
+  offline-source-evidence-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check measured original opcode snapshot and proof-run archive
+        run: |
+          python3 execution-prototype/native-core-cost-20261028/validate_physical_results.py
+          bash -n execution-prototype/native-core-cost-20261028/check_native_physical_40x896.sh
+          python3 -m py_compile execution-prototype/native-core-cost-20261028/build_physical_results.py execution-prototype/native-core-cost-20261028/validate_physical_results.py

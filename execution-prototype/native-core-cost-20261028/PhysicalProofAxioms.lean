@@ -1,0 +1,5 @@
+import PhysicalNumericLift
+
+#print axioms IndependentNativeCost.PhysicalPort.register_exact
+#print axioms IndependentNativeCost.PhysicalPort.stack_exact
+#print axioms IndependentNativeCost.PhysicalStream.physicalNumericOne_refines_original

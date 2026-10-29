@@ -78,3 +78,7 @@ We linked the original OpenAI **fixed native leaf command** and its `LeafContrac
 ## Real original hash-parameter execution and cost measurements (2026-10-28)
 
 [Measured source-bit costs and exact verification boundaries](docs/NATIVE_CORE_COST_20261028.md). Six input parameter sets actually execute 2,324–3,778 original arithmetic bit instructions, with 426/426 original opcodes and full 3,006-step source trace agreement for the principal case. The real original 16-register/44-stack ABI completes 3,585 instructions with 108 peak occupied stack data bits, 637/637 matching original opcodes and a full original-machine state replay. Full 40×896 preparation and the high-query #SAT solver have **not** yet executed; no end-to-end SAT speed advantage is established.
+
+## Original physical 40×896 native leaf hash preparation now executes (2026-10-29)
+
+[Read the 3,585-step original/physical lockstep audit](docs/NATIVE_PHYSICAL_40X896_20261029.md). A nonempty CNF passes 180 source bit instructions of genuine clause counting; the original hash-parameter ABI then executes 3,585 actual Boolean instructions on 40 registers and 896 physical virtual stacks, with 125 peak occupied stack data bits and correct computed parameters. The original 16/44-port mapping and every opcode variant have kernel-checked refinement theorems. **All 3,585 original/physical machine states match, and every step's 896-stack data occupancy is independently recounted.** This is preparation, not a completed high-query #SAT solver or a subexponential speedup result.

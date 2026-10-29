@@ -29,3 +29,6 @@ verifiers/
 
 # Local original hash/ABI performance experiment logs
 .native-core-cost-logs/
+
+# Local execution-only original SAT leaf proof/VM cost logs
+.native-physical-40x896-logs/

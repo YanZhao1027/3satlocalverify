@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-29",
+  "source": "OpenAI/math pinned commit 7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a (Lean 4.34.1)",
+  "status": "original physical 40x896 hash preparation (lifted ABI) run PASSED; full high-query SAT solver NOT run",
+  "inputs": "real nonempty 3-variable one-clause CNF x0, actual original clause counter output m=1; n=3 B=8",
+  "machine_model": "source-level Boolean instructions, 40 registers, 896 stacks, original ports by kernel-proven formula",
+  "source_opcode_table": "physical-original-opcodes.txt",
+  "source_opcode_sha256": "0b5ff5b78aacd18775f5a2d9c6dde7360fc38fdbcaf2b97a1441253657245e9c",
+  "abi_static_opcode_count": 637,
+  "abi_direct_original_bit_program_full_trace_check": true,
+  "physical_port_mapping_proven_for_all_16_registers_and_44_stacks": true,
+  "physical_numeric_opcode_general_refinement_theorem_checked": true,
+  "kernel_axioms_only": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "stages": {
+    "original_clause_count": {
+      "steps_including_halt": 180,
+      "peak_occupied_stack_bits": 40,
+      "output_m": 1
+    },
+    "physical_hash_abi": {
+      "source_steps_including_halt": 3585,
+      "outer_call_final_halt_budget": 1,
+      "peak_occupied_stack_bits": 125,
+      "peak_one_stack_bits": 22,
+      "initial_occupied_bits": 24,
+      "final_occupied_bits": 51,
+      "visited_labels": 616,
+      "observed_instruction_ms": 5,
+      "output_3m": 3,
+      "distance_denom": 1280000,
+      "loop_cap": 10
+    },
+    "reported_separately_staged_instruction_total": 3766
+  },
+  "all_3585_executed_steps_full_state_agree": true,
+  "all_3585_step_stack_store_full_896_stack_recount_agrees": true,
+  "all_40_registers_896_stacks_unmapped_frame_preserved": true,
+  "limitations": [
+    "This is the actual hash-parameter preparation ABI mapped to the full leaf bank, not NativeLeafPreparation.command or the complete SAT solver.",
+    "The two stages are executed as independently compiled and re-initialized source programs; 3766 is a staged total, not a monolithic original start trace.",
+    "The extra one instruction for caller HALT is wrapper accounting, not a directly executed monolithic 40x896 program trace.",
+    "Peak occupied virtual stack data bits are not a physical Turing tape-space bound, and Lean/host wall times are not source-bit time.",
+    "No asymptotic or empirical subexponential #SAT runtime advantage is established."
+  ]
+}
