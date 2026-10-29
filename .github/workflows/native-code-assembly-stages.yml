@@ -1,0 +1,25 @@
+name: Native source code-assembly stage experiment evidence
+on:
+  push:
+    paths:
+      - 'execution-prototype/native-code-parameters-20261029/**'
+      - '.github/workflows/native-code-assembly-stages.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/native-code-parameters-20261029/**'
+      - '.github/workflows/native-code-assembly-stages.yml'
+  workflow_dispatch:
+jobs:
+  reported-native-source-cost-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate source-stage results and script syntax (not original Lean recompilation)
+        run: |
+          python3 execution-prototype/native-code-parameters-20261029/validate_native_code_results.py
+          python3 -m py_compile execution-prototype/native-code-parameters-20261029/*.py
+          bash -n execution-prototype/native-code-parameters-20261029/check_native_code_stages.sh
+          bash -n execution-prototype/native-code-parameters-20261029/lean-env.sh

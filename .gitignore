@@ -36,3 +36,6 @@ verifiers/
 # Pinned original source opcode / canonical-start Lean measurements
 .native-start-source-probe-logs/
 .native-start-canonical-logs/
+
+# Original native parameter/search/serialization runtime logs
+.native-code-assembly-logs/
