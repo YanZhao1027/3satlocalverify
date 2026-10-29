@@ -20,5 +20,8 @@ jobs:
       - name: Check archived log/JSON and QA script only (not heavy Lean execution)
         run: |
           python3 execution-prototype/native-aftercode-original-20261029/validate_original_aftercode.py
+          python3 execution-prototype/native-aftercode-original-20261029/validate_full_aftercode.py
           python3 -m py_compile execution-prototype/native-aftercode-original-20261029/*.py
           bash -n execution-prototype/native-aftercode-original-20261029/check_original_aftercode.sh
+          bash -n execution-prototype/native-aftercode-original-20261029/check_native_kernel_bridge.sh
+          bash -n execution-prototype/native-aftercode-original-20261029/run_complete_native_aftercode.sh
