@@ -1,0 +1,50 @@
+name: Ten-gate research evidence board integrity
+on:
+  push:
+    paths:
+      - 'research/**'
+      - 'docs/RESEARCH_GATE_BOARD.md'
+      - 'docs/NATIVE_*.md'
+      - 'scripts/research_board.py'
+      - 'scripts/test_research_board.py'
+      - 'AGENTS.md'
+      - '.github/workflows/research-gate-board.yml'
+  pull_request:
+    paths:
+      - 'research/**'
+      - 'docs/**'
+      - 'scripts/research_board.py'
+      - 'scripts/test_research_board.py'
+      - 'AGENTS.md'
+      - '.github/workflows/research-gate-board.yml'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1'
+jobs:
+  board-registry-consistency:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate canonical registry and derived board/cards
+        run: |
+          python3 scripts/research_board.py --check
+          python3 -m unittest discover -s scripts -p 'test_research_board.py'
+          python3 scripts/research_board.py --status
+      - name: Review freshness (warning only; no claim of new verification)
+        run: |
+          python3 - <<'PYCODE'
+          import json
+          from datetime import date
+          from pathlib import Path
+          d = json.loads(Path("research/ten_gates.json").read_text())
+          days = (date.today() - date.fromisoformat(d["reviewed_on"])).days
+          if days >= 7:
+              print(f"::warning title=Ten-gate review is stale::Last human evidence review was {days} days ago; check the blockers, new PRs, and experiments before updating.")
+          else:
+              print(f"TEN_GATES_REVIEW_AGE_OK days={days}")
+          PYCODE
+          echo "This is metadata consistency, not a fresh Lean proof or SAT run."
+          echo "Weekly schedules run only after workflow is on the default branch."
