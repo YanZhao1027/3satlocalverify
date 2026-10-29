@@ -1,5 +1,7 @@
 # 本地 3-SAT / #SAT 复现与 Lean 形式化验证
 
+**十关研究看板：** [查看最新进度](docs/RESEARCH_GATE_BOARD.md) · [结构化清单](research/ten_gates.json) · [RAG 检索卡片](research/gate_cards.jsonl) · [复核日志](research/REVIEW_LOG.md)。关卡状态必须由可复现证据支撑。
+
 本仓库记录 2026-10-28 在个人 Ubuntu 计算机完成的独立实验，基于 [OpenAI/math](https://github.com/openai/math) SubexponentialSAT 形式化源码。本仓库**不是**完整论文次指数算法的实现，也没有独立证明 ETH 为假。
 
 ## 已完成的成果

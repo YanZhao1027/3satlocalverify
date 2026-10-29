@@ -1,0 +1,12 @@
+FULL_NATIVE_SOURCE_LABELS=12539 entry=3
+FULL_NATIVE_LAZY_SOURCE_OPCODE index=0 category=halt fetchMs=0 elapsedMs=21864
+FULL_NATIVE_LAZY_SOURCE_OPCODE index=3 category=other fetchMs=114 elapsedMs=21978
+FULL_NATIVE_LAZY_SOURCE_OPCODE index=4 category=branch fetchMs=114 elapsedMs=22092
+FULL_NATIVE_LAZY_SOURCE_OPCODE index=5 category=other fetchMs=114 elapsedMs=22206
+FULL_NATIVE_LAZY_SOURCE_OPCODE index=3160 category=goto fetchMs=105 elapsedMs=22311
+FULL_NATIVE_LAZY_SOURCE_OPCODE index=3161 category=other fetchMs=104 elapsedMs=22415
+FULL_NATIVE_LAZY_SOURCE_OPCODE index=9000 category=other fetchMs=49 elapsedMs=22464
+FULL_NATIVE_LAZY_SOURCE_OPCODE index=12421 category=other fetchMs=8 elapsedMs=22472
+FULL_NATIVE_LAZY_SOURCE_OPCODE index=12538 category=goto fetchMs=0 elapsedMs=22472
+FULL_NATIVE_LAZY_SAMPLE_PASS originalSourceLabels=12539 entry=3 sites=9 noWholeTable=true
+ELAPSED=25.55s RSS_KB=7998720 EXIT=0

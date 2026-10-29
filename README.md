@@ -2,7 +2,7 @@
 
 **Independent research reproductions, not a new proof that ETH is false.**
 
-[中文说明](README.zh-CN.md) · [Upstream OpenAI math repository](https://github.com/openai/math) · [Methods and limitations](docs/METHODS_AND_LIMITATIONS.md) · [Reproduction guide](docs/REPRODUCE.md)
+[Ten-gate research board](docs/RESEARCH_GATE_BOARD.md) · [RAG-ready gate registry](research/ten_gates.json) · [Search and update instructions](research/AGENT_CONTEXT.md) · [中文说明](README.zh-CN.md) · [Upstream OpenAI math repository](https://github.com/openai/math) · [Methods and limitations](docs/METHODS_AND_LIMITATIONS.md) · [Reproduction guide](docs/REPRODUCE.md)
 
 This repository archives executable experiments built on an Ubuntu workstation to investigate the formalized **SubexponentialSAT** work. Our code is *separate* from OpenAI's upstream mathematical formalization. The upstream source and its large Lean dependencies are **not** vendored.
 

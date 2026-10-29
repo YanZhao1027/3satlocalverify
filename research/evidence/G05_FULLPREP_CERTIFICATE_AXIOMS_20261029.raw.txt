@@ -1,0 +1,13 @@
+'IndependentFullPreparationDirectCertificate.original_full_code_table_is_source' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'IndependentFullPreparationDirectCertificate.every_finite_full_preparation_prefix_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'IndependentFullPreparationDirectCertificate.every_full_preparation_step_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'IndependentFullPreparationDirectCertificate.original_full_program_entry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ELAPSED=3.41s RSS_KB=8030628 EXIT=0
