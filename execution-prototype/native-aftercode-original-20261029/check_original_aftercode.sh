@@ -22,7 +22,7 @@ mkdir -p "$LOGROOT"
 WORKDIR="$(mktemp -d "$LOGROOT/original-aftercode-replay-XXXXXXXX")"
 echo "ORIGINAL_AFTERCODE_REPLAY_LOGDIR=$WORKDIR"
 cd "$Q"
-for mod in NativeFinishOriginalDirect NativeFinishStepSemanticAudit; do
+for mod in NativeFinishOriginalDirect NativeFinishStepSemanticAudit NativeStepKernelProof; do
   if grep -E '\b(sorry|admit|native_decide)\b' "$mod.lean"; then
     echo "Unaccepted proof placeholder in $mod" >&2; exit 5;
   fi
@@ -40,8 +40,13 @@ done
   lean --run NativeFinishOriginalDirectRunner.lean 1000000 8 > "$WORKDIR/original.log" 2>&1 || {
     tail -n 30 "$WORKDIR/original.log" >&2; exit 8;
   }
+grep -q "NativeStepKernelProof.compact_set_agrees" "$WORKDIR/NativeStepKernelProof.build.log"
+if grep -q "sorryAx" "$WORKDIR/NativeStepKernelProof.build.log"; then
+  echo "Kernel theorem unexpectedly depends on sorryAx" >&2; exit 9
+fi
 python3 "$Q/verify_replay.py" --log "$WORKDIR/original.log" --semantics "$WORKDIR/semantics.log"
 python3 "$Q/validate_original_aftercode.py"
 python3 -m py_compile "$Q"/*.py
 bash -n "$Q/check_original_aftercode.sh"
 echo "ORIGINAL_AFTERCODE_SOURCE_QA_PASS; prefix unhalted; proof boundaries retained"
+# Independent universal theorem (halt/goto/set); no sorry.
