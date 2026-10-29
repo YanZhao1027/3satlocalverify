@@ -70,3 +70,14 @@
 4. 用匹配任务的完整精确 #SAT 基线比较真正非特制输入，并计入固定程序、预处理和数据搬运。
 
 **未完成完整 SAT/#SAT，未证明 ETH 错误，未证明通用 `2^{o(n)}` 加速。**
+
+## 6. 增量形式化语义桥梁（同日追加）
+
+在测试外，新增了 Lean 内核核验的三个通用定理，位于 `NativeStepKernelProof.lean`：
+
+- `compact_halt_agrees`：任意合法配置上，紧凑 `halt` 与原版 `execInstr` 一致。
+- `compact_goto_agrees`：任意程序计数器／配置，`goto` 语义一致。
+- `compact_set_agrees`：任意寄存器位置、布尔值和配置，`set` 的 PC 和所有寄存器、栈状态一致。
+- 辅助引理 `ofFn_update` 将通用函数更新与紧凑布尔数组更新严格对应，避免把随机测试当作证明。
+
+上述定理由 Lean 4.34.1 成功编译，公理审计：`halt` 与 `goto` 仅依赖 `propext`；`set` 依赖 `propext`、`Classical.choice`、`Quot.sound`。没有 `sorryAx`。**其余操作码和完整编译器全局等价性尚未证明。**

@@ -62,3 +62,11 @@
 [实验报告和明确限制](docs/NATIVE_AFTERCODE_ORIGINAL_20261029.md) · [可复现代码与记录](execution-prototype/native-aftercode-original-20261029/)
 
 直接构建并执行 OpenAI 原版 `StructuredCalls.compiled NativeLeafPreparation.afterCode` 的完整操作码表；**119/119** 个指令位置在运行时与独立线性化表一致，尚不是 Lean 内核全称定理。在真实非空 CNF 物理状态上运行 **800 万条原版源位指令**，产生 **140,962/5,120,003** 位编码候选，原始 13 位行数据保存完好，但程序**尚未停机**。额外 **536/536** 个单步状态差分均通过；这仍不是普遍解释器等价证明，亦没有完成高查询 #SAT 或证明 ETH 错误。
+
+进一步新增 Lean 内核语义桥梁：`NativeStepKernelProof.lean` 对通用配置证明了紧凑执行器与原版 `execInstr` 的 `halt`、`goto`、`set` 对应性，并证明数组更新辅助引理；公理检查无 `sorryAx`。其他操作码及完整编译器全称等价定理仍未完成。
+
+## 原版 afterCode 全部执行到自然停机（2026-10-29）
+
+[完整实验报告与 Lean 内核证明](docs/NATIVE_COMPACT_KERNEL_AND_AFTERCODE_COMPLETE_20261029.md) · [源代码、原始日志与机器可读结果](execution-prototype/native-aftercode-original-20261029/)
+
+继之前 800 万步的前缀测试，原版 OpenAI 编译的 NativeLeafPreparation.afterCode 已真实执行 **290,560,512 条源位指令**，自然停机，生成目标 **5,120,003 位编码零候选**。完整 **896 栈最终内容**与经过内核等价证明的原版 finishedWords 参考一致，峰值已占用栈数据为 5,120,133 位，Linux 耗时 258.35 秒，退出码 0。内核证明覆盖通用单步、任意有限步和原始 Trace 重放；仍未运行完整的单程序 NativeLeafPreparation.command、高查询 #SAT，更不能由此证明 ETH 错误。

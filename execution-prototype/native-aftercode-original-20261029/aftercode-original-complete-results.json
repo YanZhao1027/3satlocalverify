@@ -1,0 +1,652 @@
+{
+  "date": "2026-10-29",
+  "originalUpstreamCommit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "originalCommand": "StructuredCalls.compiled NativeLeafPreparation.afterCode 784 788",
+  "sourceLabels": 119,
+  "initialFormula": "n=3, m=1, nonempty clause x0",
+  "priorPhysicalState": "genuine original numeric parameters + both code searches + serialized 13-bit row",
+  "run": {
+    "sourceBitInstructions": 290560512,
+    "halted": true,
+    "expectedZeroWordBits": 5120003,
+    "actualZeroWordBits": 5120003,
+    "maxOccupiedStackDataBits": 5120133,
+    "finalOccupiedStackDataBits": 5120112,
+    "complete896StackMatchesOriginalFinishedWords": true,
+    "originalSerializedRowPreserved": true,
+    "opcodeCounts": {
+      "push": 70400128,
+      "pop": 71680163,
+      "peek": 3840000,
+      "branch": 76800159,
+      "bitLogic": 56320038,
+      "goto": 3840019,
+      "set": 7680004,
+      "copy": 0,
+      "halt": 1
+    },
+    "checkpointCount": 59,
+    "checkpoints": [
+      {
+        "chunk": 1,
+        "steps": 5000000,
+        "zeroWordBits": 88098,
+        "measuredStackBits": 88227,
+        "peakDataBits": 88228,
+        "sourceChunkMs": 4066,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 2,
+        "steps": 10000000,
+        "zeroWordBits": 176206,
+        "measuredStackBits": 176335,
+        "peakDataBits": 176336,
+        "sourceChunkMs": 4090,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 3,
+        "steps": 15000000,
+        "zeroWordBits": 264310,
+        "measuredStackBits": 264439,
+        "peakDataBits": 264440,
+        "sourceChunkMs": 4075,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 4,
+        "steps": 20000000,
+        "zeroWordBits": 352418,
+        "measuredStackBits": 352548,
+        "peakDataBits": 352548,
+        "sourceChunkMs": 4099,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 5,
+        "steps": 25000000,
+        "zeroWordBits": 440522,
+        "measuredStackBits": 440651,
+        "peakDataBits": 440652,
+        "sourceChunkMs": 4090,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 6,
+        "steps": 30000000,
+        "zeroWordBits": 528630,
+        "measuredStackBits": 528760,
+        "peakDataBits": 528760,
+        "sourceChunkMs": 4126,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 7,
+        "steps": 35000000,
+        "zeroWordBits": 616734,
+        "measuredStackBits": 616863,
+        "peakDataBits": 616864,
+        "sourceChunkMs": 4137,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 8,
+        "steps": 40000000,
+        "zeroWordBits": 704838,
+        "measuredStackBits": 704967,
+        "peakDataBits": 704968,
+        "sourceChunkMs": 4162,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 9,
+        "steps": 45000000,
+        "zeroWordBits": 792946,
+        "measuredStackBits": 793076,
+        "peakDataBits": 793076,
+        "sourceChunkMs": 4155,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 10,
+        "steps": 50000000,
+        "zeroWordBits": 881050,
+        "measuredStackBits": 881179,
+        "peakDataBits": 881180,
+        "sourceChunkMs": 4158,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 11,
+        "steps": 55000000,
+        "zeroWordBits": 969158,
+        "measuredStackBits": 969288,
+        "peakDataBits": 969288,
+        "sourceChunkMs": 4174,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 12,
+        "steps": 60000000,
+        "zeroWordBits": 1057262,
+        "measuredStackBits": 1057392,
+        "peakDataBits": 1057392,
+        "sourceChunkMs": 4195,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 13,
+        "steps": 65000000,
+        "zeroWordBits": 1145368,
+        "measuredStackBits": 1145498,
+        "peakDataBits": 1145499,
+        "sourceChunkMs": 4139,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 14,
+        "steps": 70000000,
+        "zeroWordBits": 1233474,
+        "measuredStackBits": 1233603,
+        "peakDataBits": 1233604,
+        "sourceChunkMs": 4178,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 15,
+        "steps": 75000000,
+        "zeroWordBits": 1321578,
+        "measuredStackBits": 1321708,
+        "peakDataBits": 1321708,
+        "sourceChunkMs": 4150,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 16,
+        "steps": 80000000,
+        "zeroWordBits": 1409686,
+        "measuredStackBits": 1409815,
+        "peakDataBits": 1409816,
+        "sourceChunkMs": 4105,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 17,
+        "steps": 85000000,
+        "zeroWordBits": 1497790,
+        "measuredStackBits": 1497919,
+        "peakDataBits": 1497920,
+        "sourceChunkMs": 4147,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 18,
+        "steps": 90000000,
+        "zeroWordBits": 1585898,
+        "measuredStackBits": 1586027,
+        "peakDataBits": 1586028,
+        "sourceChunkMs": 4119,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 19,
+        "steps": 95000000,
+        "zeroWordBits": 1674002,
+        "measuredStackBits": 1674131,
+        "peakDataBits": 1674132,
+        "sourceChunkMs": 4112,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 20,
+        "steps": 100000000,
+        "zeroWordBits": 1762110,
+        "measuredStackBits": 1762240,
+        "peakDataBits": 1762240,
+        "sourceChunkMs": 4116,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 21,
+        "steps": 105000000,
+        "zeroWordBits": 1850214,
+        "measuredStackBits": 1850343,
+        "peakDataBits": 1850344,
+        "sourceChunkMs": 4119,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 22,
+        "steps": 110000000,
+        "zeroWordBits": 1938322,
+        "measuredStackBits": 1938452,
+        "peakDataBits": 1938452,
+        "sourceChunkMs": 4126,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 23,
+        "steps": 115000000,
+        "zeroWordBits": 2026426,
+        "measuredStackBits": 2026556,
+        "peakDataBits": 2026556,
+        "sourceChunkMs": 4135,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 24,
+        "steps": 120000000,
+        "zeroWordBits": 2114530,
+        "measuredStackBits": 2114660,
+        "peakDataBits": 2114660,
+        "sourceChunkMs": 4150,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 25,
+        "steps": 125000000,
+        "zeroWordBits": 2202638,
+        "measuredStackBits": 2202768,
+        "peakDataBits": 2202768,
+        "sourceChunkMs": 4191,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 26,
+        "steps": 130000000,
+        "zeroWordBits": 2290742,
+        "measuredStackBits": 2290871,
+        "peakDataBits": 2290872,
+        "sourceChunkMs": 4167,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 27,
+        "steps": 135000000,
+        "zeroWordBits": 2378850,
+        "measuredStackBits": 2378979,
+        "peakDataBits": 2378980,
+        "sourceChunkMs": 4178,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 28,
+        "steps": 140000000,
+        "zeroWordBits": 2466954,
+        "measuredStackBits": 2467084,
+        "peakDataBits": 2467084,
+        "sourceChunkMs": 4181,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 29,
+        "steps": 145000000,
+        "zeroWordBits": 2555062,
+        "measuredStackBits": 2555192,
+        "peakDataBits": 2555192,
+        "sourceChunkMs": 4233,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 30,
+        "steps": 150000000,
+        "zeroWordBits": 2643166,
+        "measuredStackBits": 2643296,
+        "peakDataBits": 2643296,
+        "sourceChunkMs": 4166,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 31,
+        "steps": 155000000,
+        "zeroWordBits": 2731270,
+        "measuredStackBits": 2731399,
+        "peakDataBits": 2731400,
+        "sourceChunkMs": 4185,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 32,
+        "steps": 160000000,
+        "zeroWordBits": 2819378,
+        "measuredStackBits": 2819508,
+        "peakDataBits": 2819508,
+        "sourceChunkMs": 4197,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 33,
+        "steps": 165000000,
+        "zeroWordBits": 2907482,
+        "measuredStackBits": 2907612,
+        "peakDataBits": 2907612,
+        "sourceChunkMs": 4194,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 34,
+        "steps": 170000000,
+        "zeroWordBits": 2995590,
+        "measuredStackBits": 2995719,
+        "peakDataBits": 2995720,
+        "sourceChunkMs": 4196,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 35,
+        "steps": 175000000,
+        "zeroWordBits": 3083694,
+        "measuredStackBits": 3083823,
+        "peakDataBits": 3083824,
+        "sourceChunkMs": 4226,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 36,
+        "steps": 180000000,
+        "zeroWordBits": 3171798,
+        "measuredStackBits": 3171930,
+        "peakDataBits": 3171930,
+        "sourceChunkMs": 4232,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 37,
+        "steps": 185000000,
+        "zeroWordBits": 3259906,
+        "measuredStackBits": 3260035,
+        "peakDataBits": 3260036,
+        "sourceChunkMs": 4223,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 38,
+        "steps": 190000000,
+        "zeroWordBits": 3348010,
+        "measuredStackBits": 3348140,
+        "peakDataBits": 3348140,
+        "sourceChunkMs": 4281,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 39,
+        "steps": 195000000,
+        "zeroWordBits": 3436118,
+        "measuredStackBits": 3436248,
+        "peakDataBits": 3436248,
+        "sourceChunkMs": 4267,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 40,
+        "steps": 200000000,
+        "zeroWordBits": 3524222,
+        "measuredStackBits": 3524351,
+        "peakDataBits": 3524352,
+        "sourceChunkMs": 4292,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 41,
+        "steps": 205000000,
+        "zeroWordBits": 3612330,
+        "measuredStackBits": 3612459,
+        "peakDataBits": 3612460,
+        "sourceChunkMs": 4271,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 42,
+        "steps": 210000000,
+        "zeroWordBits": 3700434,
+        "measuredStackBits": 3700563,
+        "peakDataBits": 3700564,
+        "sourceChunkMs": 4302,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 43,
+        "steps": 215000000,
+        "zeroWordBits": 3788542,
+        "measuredStackBits": 3788671,
+        "peakDataBits": 3788672,
+        "sourceChunkMs": 4284,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 44,
+        "steps": 220000000,
+        "zeroWordBits": 3876646,
+        "measuredStackBits": 3876775,
+        "peakDataBits": 3876776,
+        "sourceChunkMs": 4331,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 45,
+        "steps": 225000000,
+        "zeroWordBits": 3964752,
+        "measuredStackBits": 3964883,
+        "peakDataBits": 3964883,
+        "sourceChunkMs": 4318,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 46,
+        "steps": 230000000,
+        "zeroWordBits": 4052858,
+        "measuredStackBits": 4052987,
+        "peakDataBits": 4052988,
+        "sourceChunkMs": 4299,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 47,
+        "steps": 235000000,
+        "zeroWordBits": 4140962,
+        "measuredStackBits": 4141091,
+        "peakDataBits": 4141092,
+        "sourceChunkMs": 4334,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 48,
+        "steps": 240000000,
+        "zeroWordBits": 4229070,
+        "measuredStackBits": 4229200,
+        "peakDataBits": 4229200,
+        "sourceChunkMs": 4335,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 49,
+        "steps": 245000000,
+        "zeroWordBits": 4317174,
+        "measuredStackBits": 4317304,
+        "peakDataBits": 4317304,
+        "sourceChunkMs": 4399,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 50,
+        "steps": 250000000,
+        "zeroWordBits": 4405281,
+        "measuredStackBits": 4405411,
+        "peakDataBits": 4405411,
+        "sourceChunkMs": 4421,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 51,
+        "steps": 255000000,
+        "zeroWordBits": 4493386,
+        "measuredStackBits": 4493516,
+        "peakDataBits": 4493516,
+        "sourceChunkMs": 4437,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 52,
+        "steps": 260000000,
+        "zeroWordBits": 4581493,
+        "measuredStackBits": 4581623,
+        "peakDataBits": 4581623,
+        "sourceChunkMs": 4417,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 53,
+        "steps": 265000000,
+        "zeroWordBits": 4669598,
+        "measuredStackBits": 4669727,
+        "peakDataBits": 4669728,
+        "sourceChunkMs": 4411,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 54,
+        "steps": 270000000,
+        "zeroWordBits": 4757702,
+        "measuredStackBits": 4757831,
+        "peakDataBits": 4757832,
+        "sourceChunkMs": 4402,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 55,
+        "steps": 275000000,
+        "zeroWordBits": 4845810,
+        "measuredStackBits": 4845940,
+        "peakDataBits": 4845940,
+        "sourceChunkMs": 4415,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 56,
+        "steps": 280000000,
+        "zeroWordBits": 4933914,
+        "measuredStackBits": 4934043,
+        "peakDataBits": 4934044,
+        "sourceChunkMs": 4414,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 57,
+        "steps": 285000000,
+        "zeroWordBits": 5022022,
+        "measuredStackBits": 5022152,
+        "peakDataBits": 5022152,
+        "sourceChunkMs": 4494,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 58,
+        "steps": 290000000,
+        "zeroWordBits": 5110126,
+        "measuredStackBits": 5110255,
+        "peakDataBits": 5110256,
+        "sourceChunkMs": 4458,
+        "halted": false,
+        "pc": "(some"
+      },
+      {
+        "chunk": 59,
+        "steps": 290560512,
+        "zeroWordBits": 5120003,
+        "measuredStackBits": 5120112,
+        "peakDataBits": 5120133,
+        "sourceChunkMs": 872,
+        "halted": true,
+        "pc": "none"
+      }
+    ],
+    "wallSeconds": 258.35,
+    "maxProcessRSSKb": 8265020
+  },
+  "semantics": {
+    "kernelCheckedUniversalRunOne": true,
+    "kernelCheckedDirectTableAllFuel": true,
+    "kernelCheckedOriginalTraceReplay": true,
+    "kernelCheckedCachedOriginalFinishedWordsEquality": true,
+    "standardAxiomsOnly": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "hostMeterUniversalProof": false,
+    "hostMeterFullStateReferenceAt8M": true
+  },
+  "evidence": {
+    "fullRawLog": "aftercode-original-complete.raw.txt",
+    "fullRawLogSHA256": "bc5878399db48726d2109baef50debc8aa54036c0dcd69c8b36d2babdee71285",
+    "baselineLog": "fast-meter-8m-audit.raw.txt",
+    "baselineLogSHA256": "98dd184a990f7a2b0305e6a54d69ee9b05f191594ab8dafe528db66b75409b91"
+  },
+  "notEstablished": [
+    "entire original NativeLeafPreparation.command in one original compiled table",
+    "full query loop, HighQueryProgram or SAT counting",
+    "general subexponential runtime proof",
+    "proof of ETH refutation",
+    "physical TM2 elapsed runtime or exact primitive tape cost",
+    "kernel proof of full host instrumentation loop",
+    "universal compiler equivalence for independent native code assembly linker"
+  ]
+}
