@@ -64,3 +64,7 @@
 直接构建并执行 OpenAI 原版 `StructuredCalls.compiled NativeLeafPreparation.afterCode` 的完整操作码表；**119/119** 个指令位置在运行时与独立线性化表一致，尚不是 Lean 内核全称定理。在真实非空 CNF 物理状态上运行 **800 万条原版源位指令**，产生 **140,962/5,120,003** 位编码候选，原始 13 位行数据保存完好，但程序**尚未停机**。额外 **536/536** 个单步状态差分均通过；这仍不是普遍解释器等价证明，亦没有完成高查询 #SAT 或证明 ETH 错误。
 
 进一步新增 Lean 内核语义桥梁：`NativeStepKernelProof.lean` 对通用配置证明了紧凑执行器与原版 `execInstr` 的 `halt`、`goto`、`set` 对应性，并证明数组更新辅助引理；公理检查无 `sorryAx`。其他操作码及完整编译器全称等价定理仍未完成。
+
+### 原版 BitProgram 所有操作码、任意有限步数的内核语义证明（2026-10-29）
+
+[完整报告与可复现方法](docs/NATIVE_BITPROGRAM_UNIVERSAL_EQUIV_20261029.md)。Lean 内核已核验本地紧凑 `runOne` 与原版 `execInstr` 对**全部 12 类指令及任意合法配置**一致，进一步以归纳定理覆盖**任意有限执行步数**，还证明 `afterCode` 原版直接取码数组与上游编译代码一致。8 项定理公理检查均仅依赖 `propext`、`Classical.choice`、`Quot.sound`。带统计的 `runInstrumented`、独立全局连接器及完整求解路径仍未证明等价或完成运行。

@@ -1,0 +1,33 @@
+name: Archived universal original BitProgram kernel audit
+on:
+  push:
+    paths:
+      - 'execution-prototype/native-aftercode-original-20261029/NativeCompactInterpreterProof.lean'
+      - 'execution-prototype/native-aftercode-original-20261029/NativeDirectTraceProof.lean'
+      - 'execution-prototype/native-aftercode-original-20261029/NativeAfterCodeDirectCertificate.lean'
+      - 'execution-prototype/native-aftercode-original-20261029/check_primitive_kernel.sh'
+      - 'execution-prototype/native-aftercode-original-20261029/verify_kernel_axioms.py'
+      - 'execution-prototype/native-aftercode-original-20261029/validate_primitive_kernel_archive.py'
+      - 'execution-prototype/native-aftercode-original-20261029/kernel-axioms-*.raw.txt'
+      - 'execution-prototype/native-aftercode-original-20261029/primitive-kernel-results.json'
+      - 'docs/NATIVE_BITPROGRAM_UNIVERSAL_EQUIV_20261029.md'
+      - '.github/workflows/native-primitive-kernel-audit.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/native-aftercode-original-20261029/**'
+      - 'docs/NATIVE_BITPROGRAM_UNIVERSAL_EQUIV_20261029.md'
+      - '.github/workflows/native-primitive-kernel-audit.yml'
+  workflow_dispatch:
+jobs:
+  archived-axiom-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate archived Lean compiler output; not a new Lean compilation
+        run: |
+          python3 execution-prototype/native-aftercode-original-20261029/validate_primitive_kernel_archive.py
+          python3 -m py_compile execution-prototype/native-aftercode-original-20261029/*.py
+          bash -n execution-prototype/native-aftercode-original-20261029/check_primitive_kernel.sh

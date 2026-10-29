@@ -1,0 +1,2 @@
+'IndependentNativeCompactProof.runOne_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+LEAN_WALL=3.09s RSS_KB=7978280

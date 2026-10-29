@@ -1,0 +1,8 @@
+'IndependentNativeAfterCodeCertificate.original_array_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'IndependentNativeAfterCodeCertificate.afterCode_direct_fuel_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'IndependentNativeAfterCodeCertificate.afterCode_one_step_exact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+LEAN_WALL=3.01s RSS_KB=7978444

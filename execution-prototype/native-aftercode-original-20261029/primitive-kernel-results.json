@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-29",
+  "openaiMathUpstreamCommit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "leanToolchain": "4.34.1",
+  "kind": "Lean kernel proof source/axiom audit and archived Ubuntu replay",
+  "theoremAxiomsChecked": 8,
+  "allowedAxioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proofClaims": {
+    "allPrimitiveInstructions": true,
+    "allWellTypedBitProgramConfigurations": true,
+    "allFiniteFuel": true,
+    "allOriginalAfterCodeCompiledLabels": true,
+    "directSourceTableExecutionProved": true
+  },
+  "limitations": {
+    "fullNativeCodeAssemblyIndependentCompilerEquivalence": false,
+    "runInstrumentedMetricsInterpreterEquivalence": false,
+    "originalAfterCodeFullHalt": false,
+    "entireHighQuerySATExecuted": false,
+    "generalSubexponentialSATAdvantageVerified": false
+  },
+  "evidenceSha256": {
+    "interpreter": "13c844791d0e630434dac374b0f2806182d3f53e4868b4dedd846c680f7e61fe",
+    "trace": "83faf52c5b51fefe4468c860b670d173dc56820daac16921815a667ab886a1d3",
+    "specialization": "29e3a790f15a3012518b113b0d780fcb38a38c3de477009f2747ff300cb88c8c"
+  }
+}

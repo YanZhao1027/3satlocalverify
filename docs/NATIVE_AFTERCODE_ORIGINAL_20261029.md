@@ -81,3 +81,7 @@
 - 辅助引理 `ofFn_update` 将通用函数更新与紧凑布尔数组更新严格对应，避免把随机测试当作证明。
 
 上述定理由 Lean 4.34.1 成功编译，公理审计：`halt` 与 `goto` 仅依赖 `propext`；`set` 依赖 `propext`、`Classical.choice`、`Quot.sound`。没有 `sorryAx`。**其余操作码和完整编译器全局等价性尚未证明。**
+
+### 补充：通用解释器与任意有限步证明
+
+独立后续核验已经证明对全部原版 `BitProgram.Instr`、任意合法状态与任意有限步数，紧凑单步及直接取码执行器与上游位语义一致。详见 [原版位机器通用内核证明](NATIVE_BITPROGRAM_UNIVERSAL_EQUIV_20261029.md)。这仍不等于旧的 `runInstrumented` 循环及独立装配全局等价已证明。
