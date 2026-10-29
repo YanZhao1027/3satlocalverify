@@ -1,0 +1,24 @@
+name: Original afterCode source evidence integrity
+on:
+  push:
+    paths:
+      - 'execution-prototype/native-aftercode-original-20261029/**'
+      - '.github/workflows/native-aftercode-original.yml'
+  pull_request:
+    paths:
+      - 'execution-prototype/native-aftercode-original-20261029/**'
+      - '.github/workflows/native-aftercode-original.yml'
+  workflow_dispatch:
+jobs:
+  archived-source-evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check archived log/JSON and QA script only (not heavy Lean execution)
+        run: |
+          python3 execution-prototype/native-aftercode-original-20261029/validate_original_aftercode.py
+          python3 -m py_compile execution-prototype/native-aftercode-original-20261029/*.py
+          bash -n execution-prototype/native-aftercode-original-20261029/check_original_aftercode.sh
